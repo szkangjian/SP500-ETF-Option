@@ -19,12 +19,10 @@ try:
 except ModuleNotFoundError:
     yf = None
 
-try:
-    from ib_insync import IB, Option, Stock
-except ModuleNotFoundError:
-    IB = None
-    Option = None
-    Stock = None
+IB = None
+Option = None
+Stock = None
+IB_IMPORT_ERROR: Exception | None = None
 
 try:
     from tabulate import tabulate
@@ -417,10 +415,23 @@ def require_yfinance() -> Any:
 
 
 def require_ibkr() -> Any:
+    global IB, Option, Stock, IB_IMPORT_ERROR
     if IB is None or Stock is None or Option is None:
+        if IB_IMPORT_ERROR is None:
+            try:
+                from ib_insync import IB as ib_class, Option as option_class, Stock as stock_class
+            except Exception as exc:  # pragma: no cover - import behavior depends on runtime
+                IB_IMPORT_ERROR = exc
+            else:
+                IB = ib_class
+                Option = option_class
+                Stock = stock_class
+    if IB is None or Stock is None or Option is None:
+        detail = f" ({IB_IMPORT_ERROR})" if IB_IMPORT_ERROR else ""
         raise ModuleNotFoundError(
             "ib_insync is required for IBKR market-data actions. "
             "Install it in the active environment, or switch market_data_source back to yahoo."
+            f"{detail}"
         )
     return IB
 

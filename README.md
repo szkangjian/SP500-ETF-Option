@@ -55,6 +55,8 @@ make dashboard
 - `startCommand: python screening_dashboard.py --host 0.0.0.0 --port $PORT`
 - `COVERED_CALL_READ_ONLY=true`
 
+仓库里还带了 [.python-version](/Users/patrick/Projects/covered_call/.python-version:1)，把 Render 的 Python 版本固定到 `3.12.7`，避免默认 `3.14` 对部分依赖的兼容问题。
+
 这意味着部署后的站点会：
 
 - 自动绑定 Render 提供的 `0.0.0.0:$PORT`
