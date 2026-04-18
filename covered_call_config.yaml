@@ -1,0 +1,64 @@
+# 长期持有 + 卖 covered call 的量化筛选配置
+# 修改这里的阈值后，重新运行 `screen` 或 `run` 即可刷新结果
+
+data:
+  benchmark: SPY
+  history_period: 4y
+  cache_dir: out
+  metrics_filename: latest_metrics.csv
+  screened_filename: latest_screen.csv
+
+universe:
+  mode: file
+  path: starter_universe.txt
+  # mode: inline
+  # tickers: [SCHD, VYM, XLE, XLU, VZ, ABBV, PFE, MO]
+  # mode: sp500
+  limit: null
+
+screen:
+  option_dte_min: 25
+  option_dte_max: 45
+  option_target_dte: 35
+  target_otm_pct: 0.05
+
+  min_price: 15
+  min_size_metric: 10000000000
+
+  min_dividend_yield: 0.03
+  min_call_annualized_yield: 0.06
+  min_call_open_interest: 500
+  min_call_volume: 10
+  max_option_spread_pct: 0.08
+
+  min_beta_1y: -0.25
+  max_beta_1y: 1.20
+  min_realized_vol_1y: 0.15
+  max_realized_vol_1y: 0.45
+
+  min_total_return_3y: -0.05
+  max_drawdown_3y: 0.45
+
+scoring:
+  weights:
+    dividend_yield: 0.25
+    call_yield: 0.30
+    liquidity: 0.20
+    quality: 0.15
+    risk_fit: 0.10
+
+  caps:
+    dividend_yield: 0.08
+    call_annualized_yield: 0.18
+    call_open_interest: 5000
+    total_return_3y: 0.50
+    max_drawdown_3y: 0.45
+
+  tolerances:
+    beta_1y: 0.25
+    realized_vol_1y: 0.10
+    option_spread_pct: 0.04
+
+output:
+  top_n: 20
+  show_failed: false

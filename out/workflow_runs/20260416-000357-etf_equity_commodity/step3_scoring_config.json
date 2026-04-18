@@ -1,0 +1,23 @@
+{
+  "scoring": {
+    "weights": {
+      "dividend_yield": 0.25,
+      "call_yield": 0.3,
+      "liquidity": 0.2,
+      "quality": 0.15,
+      "risk_fit": 0.1
+    },
+    "caps": {
+      "dividend_yield": 0.08,
+      "call_annualized_yield": 0.18,
+      "call_open_interest": 5000,
+      "total_return_3y": 0.5,
+      "max_drawdown_3y": 0.45
+    },
+    "tolerances": {
+      "beta_1y": 0.25,
+      "realized_vol_1y": 0.1,
+      "option_spread_pct": 0.04
+    }
+  }
+}

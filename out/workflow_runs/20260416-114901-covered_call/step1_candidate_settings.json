@@ -1,0 +1,18 @@
+{
+  "config_name": "covered_call_config.yaml",
+  "workflow_settings": {
+    "source_universe_csv": "etf_equity_commodity_median_100m_universe.csv",
+    "source_metrics_csv": "out/etf_equity_commodity_median_100m_metrics.csv",
+    "allowed_market_classes": [
+      "equity",
+      "commodity"
+    ],
+    "require_usd": true,
+    "require_us_listing": true,
+    "require_etf_asset_type": true,
+    "min_avg_dollar_volume": 200000000,
+    "min_size_metric": 2000000000
+  },
+  "size_median": 19894205440.0,
+  "liquidity_median": 321618287.2612338
+}

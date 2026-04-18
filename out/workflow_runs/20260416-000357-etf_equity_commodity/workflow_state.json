@@ -1,0 +1,642 @@
+{
+  "workflow_dir": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity",
+  "config_name": "etf_equity_commodity_config.yaml",
+  "candidate_pool": {
+    "source_universe_rows": 497,
+    "candidate_rows": 134,
+    "size_median": 3216781056.0,
+    "liquidity_median": 32081725.046145532,
+    "artifacts": {
+      "review_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step1_candidate_review.csv",
+      "candidate_universe_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step1_candidate_universe.csv",
+      "candidate_tickers_txt": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step1_candidate_tickers.txt",
+      "candidate_metrics_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step1_candidate_metrics.csv",
+      "settings_json": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step1_candidate_settings.json"
+    },
+    "preview_rows": [
+      {
+        "symbol": "SPY",
+        "name": "SPDR S&P 500 ETF Trust",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 56220005020.10547,
+        "size_metric": 642392326144.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "QQQ",
+        "name": "Invesco QQQ Trust",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 36717594038.38984,
+        "size_metric": 250561953792.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IWM",
+        "name": "iShares Russell 2000 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 10552081098.43826,
+        "size_metric": 75712061440.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "GLD",
+        "name": "SPDR Gold Shares",
+        "market_bucket": "commodity",
+        "avg_dollar_volume": 6941069058.981323,
+        "size_metric": 114651734016.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IVV",
+        "name": "iShares Core S&P 500 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 6307493164.825193,
+        "size_metric": 437067743232.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VOO",
+        "name": "Vanguard S&P 500 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 6114537917.583933,
+        "size_metric": 1421127057408.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SLV",
+        "name": "iShares Silver Trust",
+        "market_bucket": "commodity",
+        "avg_dollar_volume": 5239303537.158181,
+        "size_metric": 24529766400.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "RSP",
+        "name": "Invesco S&P 500 Equal Weight ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 3422788979.163299,
+        "size_metric": 31068598272.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "DIA",
+        "name": "SPDR Dow Jones Industrial Average ETF Trust",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 3156670707.457758,
+        "size_metric": 39380058112.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SMH",
+        "name": "VanEck Vectors Semiconductor ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 3089461062.312243,
+        "size_metric": 5286917632.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLF",
+        "name": "Financial Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2514117267.466905,
+        "size_metric": 46089322496.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLK",
+        "name": "Technology Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2511455314.8973155,
+        "size_metric": 40890015744.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "GDX",
+        "name": "VanEck Vectors Gold Miners ETF",
+        "market_bucket": "commodity",
+        "avg_dollar_volume": 2483807461.530883,
+        "size_metric": 28155811840.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLE",
+        "name": "Energy Select Sector SPDR Fund",
+        "market_bucket": "commodity",
+        "avg_dollar_volume": 2364078150.642423,
+        "size_metric": 10395001856.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "EEM",
+        "name": "iShares MSCI Emerging Markets ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2054933912.5072265,
+        "size_metric": 46799282176.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "EFA",
+        "name": "iShares MSCI EAFE ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2024819165.7825775,
+        "size_metric": 96946102272.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLV",
+        "name": "Health Care Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2019082496.929747,
+        "size_metric": 29172017152.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLI",
+        "name": "Industrial Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1951078536.8221776,
+        "size_metric": 23387637760.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VTI",
+        "name": "Vanguard Total Stock Market Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1761412760.7576923,
+        "size_metric": 715931123712.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "EWY",
+        "name": "iShares MSCI South Korea ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1752015972.1041217,
+        "size_metric": 10955952128.0,
+        "candidate_fail_reasons": ""
+      }
+    ]
+  },
+  "hard_filter": {
+    "rows": 134,
+    "status_counts": {
+      "FAIL": 119,
+      "PASS": 15
+    },
+    "artifacts": {
+      "hard_filter_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step2_hard_filter.csv",
+      "hard_filter_pass_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step2_hard_filter_pass.csv",
+      "screen_config_json": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step2_hard_filter_config.json"
+    },
+    "preview_rows": [
+      {
+        "ticker": "KWEB",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0707152511187977,
+        "annualized_call_yield": 0.2599715153248845,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 6728.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 1.1444323445903686,
+        "realized_vol_1y": 0.2643900633362036,
+        "score_total": 0.742813
+      },
+      {
+        "ticker": "BBJP",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0487525823737963,
+        "annualized_call_yield": 0.5031012882792104,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 35.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.8982133861625202,
+        "realized_vol_1y": 0.1934167815925396,
+        "score_total": 0.729802
+      },
+      {
+        "ticker": "SPDW",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0299918160385696,
+        "annualized_call_yield": 0.1905440445974893,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 15.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.7993812139812801,
+        "realized_vol_1y": 0.1457089937995608,
+        "score_total": 0.651633
+      },
+      {
+        "ticker": "SCHF",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0310188679245283,
+        "annualized_call_yield": 0.1662329212752114,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 32.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.8067799052049169,
+        "realized_vol_1y": 0.1471337191214362,
+        "score_total": 0.628378
+      },
+      {
+        "ticker": "EWJ",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0410014596666964,
+        "annualized_call_yield": 0.1445648246660668,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 7.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.9180858229718912,
+        "realized_vol_1y": 0.1944915149722052,
+        "score_total": 0.626636
+      },
+      {
+        "ticker": "XLE",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0267485660849458,
+        "annualized_call_yield": 0.1891041026156635,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 157.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.1752240645264275,
+        "realized_vol_1y": 0.1979940563323347,
+        "score_total": 0.626423
+      },
+      {
+        "ticker": "PDBC",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0295414981731296,
+        "annualized_call_yield": 0.2191446412816002,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 8.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": -0.1563668837415805,
+        "realized_vol_1y": 0.1760605388205507,
+        "score_total": 0.625574
+      },
+      {
+        "ticker": "EWT",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0348773851189761,
+        "annualized_call_yield": 0.1480913657181251,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 218.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 1.2290380583236016,
+        "realized_vol_1y": 0.2382322489120565,
+        "score_total": 0.606188
+      },
+      {
+        "ticker": "VGK",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0281381351169863,
+        "annualized_call_yield": 0.1501251553406515,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 3.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.7527954367386717,
+        "realized_vol_1y": 0.1436936340516347,
+        "score_total": 0.584159
+      },
+      {
+        "ticker": "VEU",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0272456212970918,
+        "annualized_call_yield": 0.1407328426827474,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 6.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.8087761403179863,
+        "realized_vol_1y": 0.142965365843651,
+        "score_total": 0.561656
+      },
+      {
+        "ticker": "IXUS",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0294953189604943,
+        "annualized_call_yield": 0.1218937498084314,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 12.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.8134137172218232,
+        "realized_vol_1y": 0.1433238324558127,
+        "score_total": 0.533351
+      },
+      {
+        "ticker": "KRE",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0227410733213842,
+        "annualized_call_yield": 0.1143318424559952,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 51.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 1.0605087750325024,
+        "realized_vol_1y": 0.2399801168860608,
+        "score_total": 0.480482
+      },
+      {
+        "ticker": "VWO",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0249956962676185,
+        "annualized_call_yield": 0.0975003113887228,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 3.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.8272944580622275,
+        "realized_vol_1y": 0.1529993432675571,
+        "score_total": 0.465816
+      },
+      {
+        "ticker": "VEA",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0273216897143985,
+        "annualized_call_yield": 0.0622898185578024,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 26.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.7989709866131699,
+        "realized_vol_1y": 0.1459898815592068,
+        "score_total": 0.405087
+      },
+      {
+        "ticker": "XLP",
+        "status": "PASS",
+        "fail_reasons": "",
+        "dividend_yield": 0.0268319771219807,
+        "annualized_call_yield": 0.0625394102779244,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 3.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.1320627590255084,
+        "realized_vol_1y": 0.1266126548500092,
+        "score_total": 0.353108
+      },
+      {
+        "ticker": "EFA",
+        "status": "FAIL",
+        "fail_reasons": "option_liquidity<oi:50|vol:3",
+        "dividend_yield": 0.0314296784118924,
+        "annualized_call_yield": 0.1815598188723813,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 1.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.7820261702668132,
+        "realized_vol_1y": 0.1434915695143221,
+        "score_total": 0.657624
+      },
+      {
+        "ticker": "SCZ",
+        "status": "FAIL",
+        "fail_reasons": "option_liquidity<oi:50|vol:3",
+        "dividend_yield": 0.0304648385400994,
+        "annualized_call_yield": 0.1950186968765473,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": null,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.6859875599999011,
+        "realized_vol_1y": 0.1381674825072008,
+        "score_total": 0.653603
+      },
+      {
+        "ticker": "EFV",
+        "status": "FAIL",
+        "fail_reasons": "option_liquidity<oi:50|vol:3",
+        "dividend_yield": 0.0379808306709265,
+        "annualized_call_yield": 0.1640630164151151,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 1.0,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.6325991663635429,
+        "realized_vol_1y": 0.1358312355767033,
+        "score_total": 0.653046
+      },
+      {
+        "ticker": "IEUR",
+        "status": "FAIL",
+        "fail_reasons": "option_liquidity<oi:50|vol:3",
+        "dividend_yield": 0.0280921313121278,
+        "annualized_call_yield": 0.3183836094943728,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": null,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.7449147874835534,
+        "realized_vol_1y": 0.1429095522173468,
+        "score_total": 0.643717
+      },
+      {
+        "ticker": "SPEM",
+        "status": "FAIL",
+        "fail_reasons": "option_liquidity<oi:50|vol:3",
+        "dividend_yield": 0.0257482652201314,
+        "annualized_call_yield": 0.2245309422317747,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": null,
+        "selected_call_spread_pct": 0.0,
+        "beta_1y": 0.8342079240244428,
+        "realized_vol_1y": 0.1529121308600415,
+        "score_total": 0.633951
+      }
+    ]
+  },
+  "ranking": {
+    "rows": 15,
+    "artifacts": {
+      "ranked_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step3_ranked.csv",
+      "scoring_config_json": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-000357-etf_equity_commodity/step3_scoring_config.json"
+    },
+    "preview_rows": [
+      {
+        "ticker": "KWEB",
+        "score_total": 0.742813,
+        "dividend_yield": 0.0707152511187977,
+        "annualized_call_yield": 0.2599715153248845,
+        "combined_income_score_proxy": 0.3306867664436822,
+        "score_dividend": 0.845254,
+        "score_call": 1.0,
+        "score_liquidity": 0.3,
+        "score_quality": 0.476663,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "BBJP",
+        "score_total": 0.729802,
+        "dividend_yield": 0.0487525823737963,
+        "annualized_call_yield": 0.5031012882792104,
+        "combined_income_score_proxy": 0.5518538706530067,
+        "score_dividend": 0.47921,
+        "score_call": 1.0,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "SPDW",
+        "score_total": 0.651633,
+        "dividend_yield": 0.0299918160385696,
+        "annualized_call_yield": 0.1905440445974893,
+        "combined_income_score_proxy": 0.2205358606360589,
+        "score_dividend": 0.16653,
+        "score_call": 1.0,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "SCHF",
+        "score_total": 0.628378,
+        "dividend_yield": 0.0310188679245283,
+        "annualized_call_yield": 0.1662329212752114,
+        "combined_income_score_proxy": 0.19725178919973968,
+        "score_dividend": 0.183648,
+        "score_call": 0.908219,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "EWJ",
+        "score_total": 0.626636,
+        "dividend_yield": 0.0410014596666964,
+        "annualized_call_yield": 0.1445648246660668,
+        "combined_income_score_proxy": 0.1855662843327632,
+        "score_dividend": 0.350024,
+        "score_call": 0.763765,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "XLE",
+        "score_total": 0.626423,
+        "dividend_yield": 0.0267485660849458,
+        "annualized_call_yield": 0.1891041026156635,
+        "combined_income_score_proxy": 0.2158526687006093,
+        "score_dividend": 0.112476,
+        "score_call": 1.0,
+        "score_liquidity": 0.3,
+        "score_quality": 0.922025,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "PDBC",
+        "score_total": 0.625574,
+        "dividend_yield": 0.0295414981731296,
+        "annualized_call_yield": 0.2191446412816002,
+        "combined_income_score_proxy": 0.24868613945472978,
+        "score_dividend": 0.159025,
+        "score_call": 1.0,
+        "score_liquidity": 0.3,
+        "score_quality": 0.838782,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "EWT",
+        "score_total": 0.606188,
+        "dividend_yield": 0.0348773851189761,
+        "annualized_call_yield": 0.1480913657181251,
+        "combined_income_score_proxy": 0.18296875083710118,
+        "score_dividend": 0.247956,
+        "score_call": 0.787276,
+        "score_liquidity": 0.3,
+        "score_quality": 0.986775,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "VGK",
+        "score_total": 0.584159,
+        "dividend_yield": 0.0281381351169863,
+        "annualized_call_yield": 0.1501251553406515,
+        "combined_income_score_proxy": 0.17826329045763778,
+        "score_dividend": 0.135636,
+        "score_call": 0.800834,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "VEU",
+        "score_total": 0.561656,
+        "dividend_yield": 0.0272456212970918,
+        "annualized_call_yield": 0.1407328426827474,
+        "combined_income_score_proxy": 0.1679784639798392,
+        "score_dividend": 0.12076,
+        "score_call": 0.738219,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "IXUS",
+        "score_total": 0.533351,
+        "dividend_yield": 0.0294953189604943,
+        "annualized_call_yield": 0.1218937498084314,
+        "combined_income_score_proxy": 0.15138906876892572,
+        "score_dividend": 0.158255,
+        "score_call": 0.612625,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "KRE",
+        "score_total": 0.480482,
+        "dividend_yield": 0.0227410733213842,
+        "annualized_call_yield": 0.1143318424559952,
+        "combined_income_score_proxy": 0.1370729157773794,
+        "score_dividend": 0.045685,
+        "score_call": 0.562212,
+        "score_liquidity": 0.3,
+        "score_quality": 0.93598,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "VWO",
+        "score_total": 0.465816,
+        "dividend_yield": 0.0249956962676185,
+        "annualized_call_yield": 0.0975003113887228,
+        "combined_income_score_proxy": 0.1224960076563413,
+        "score_dividend": 0.083262,
+        "score_call": 0.450002,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "VEA",
+        "score_total": 0.405087,
+        "dividend_yield": 0.0273216897143985,
+        "annualized_call_yield": 0.0622898185578024,
+        "combined_income_score_proxy": 0.0896115082722009,
+        "score_dividend": 0.122028,
+        "score_call": 0.215265,
+        "score_liquidity": 0.3,
+        "score_quality": 1.0,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "XLP",
+        "score_total": 0.353108,
+        "dividend_yield": 0.0268319771219807,
+        "annualized_call_yield": 0.0625394102779244,
+        "combined_income_score_proxy": 0.08937138739990509,
+        "score_dividend": 0.113866,
+        "score_call": 0.216929,
+        "score_liquidity": 0.3,
+        "score_quality": 0.663754,
+        "score_risk_fit": 1.0
+      }
+    ]
+  }
+}

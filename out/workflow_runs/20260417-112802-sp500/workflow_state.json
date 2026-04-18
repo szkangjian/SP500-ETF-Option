@@ -1,0 +1,5082 @@
+{
+  "workflow_dir": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500",
+  "config_name": "sp500_config.yaml",
+  "settings": {
+    "source_universe_csv": "sp500_constituents.csv",
+    "allowed_market_classes": [
+      "equity"
+    ],
+    "require_usd": true,
+    "require_us_listing": true,
+    "require_etf_asset_type": false,
+    "min_avg_dollar_volume": null,
+    "min_size_metric": 300000000000,
+    "step2_reuse_same_day_cache": false
+  },
+  "candidate_pool": {
+    "source_universe_rows": 503,
+    "candidate_rows": 35,
+    "status_counts": {
+      "FAIL": 468,
+      "PASS": 35
+    },
+    "size_median": 39525175296.0,
+    "liquidity_median": null,
+    "artifacts": {
+      "review_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step1_candidate_review.csv",
+      "candidate_universe_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step1_candidate_universe.csv",
+      "candidate_tickers_txt": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step1_candidate_tickers.txt",
+      "settings_json": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step1_candidate_settings.json",
+      "local_enrichment_csv": "out/sp500_metrics.csv"
+    },
+    "preview_rows": [
+      {
+        "symbol": "NVDA",
+        "market_bucket": "equity",
+        "size_metric": 4870476660736.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "GOOGL",
+        "market_bucket": "equity",
+        "size_metric": 4110318829568.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "GOOG",
+        "market_bucket": "equity",
+        "size_metric": 4082132844544.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "AAPL",
+        "market_bucket": "equity",
+        "size_metric": 3976891465728.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "MSFT",
+        "market_bucket": "equity",
+        "size_metric": 3159392256000.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "AMZN",
+        "market_bucket": "equity",
+        "size_metric": 2730612228096.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "AVGO",
+        "market_bucket": "equity",
+        "size_metric": 1912369053696.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "META",
+        "market_bucket": "equity",
+        "size_metric": 1734554157056.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "TSLA",
+        "market_bucket": "equity",
+        "size_metric": 1508027400192.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "WMT",
+        "market_bucket": "equity",
+        "size_metric": 1008229875712.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "JPM",
+        "market_bucket": "equity",
+        "size_metric": 840934686720.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "LLY",
+        "market_bucket": "equity",
+        "size_metric": 823605198848.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "V",
+        "market_bucket": "equity",
+        "size_metric": 611034333184.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XOM",
+        "market_bucket": "equity",
+        "size_metric": 605195075584.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "JNJ",
+        "market_bucket": "equity",
+        "size_metric": 566025060352.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "MU",
+        "market_bucket": "equity",
+        "size_metric": 517359271936.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "ORCL",
+        "market_bucket": "equity",
+        "size_metric": 506543931392.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "MA",
+        "market_bucket": "equity",
+        "size_metric": 467101908992.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "AMD",
+        "market_bucket": "equity",
+        "size_metric": 454900940800.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "COST",
+        "market_bucket": "equity",
+        "size_metric": 440631394304.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "NFLX",
+        "market_bucket": "equity",
+        "size_metric": 411208777728.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "BAC",
+        "market_bucket": "equity",
+        "size_metric": 386868674560.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "CAT",
+        "market_bucket": "equity",
+        "size_metric": 372154531840.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "ABBV",
+        "market_bucket": "equity",
+        "size_metric": 371068633088.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "CVX",
+        "market_bucket": "equity",
+        "size_metric": 363969708032.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "PLTR",
+        "market_bucket": "equity",
+        "size_metric": 352078594048.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "HD",
+        "market_bucket": "equity",
+        "size_metric": 347862663168.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "INTC",
+        "market_bucket": "equity",
+        "size_metric": 344090345472.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "PG",
+        "market_bucket": "equity",
+        "size_metric": 343628316672.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "CSCO",
+        "market_bucket": "equity",
+        "size_metric": 340050968576.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "LRCX",
+        "market_bucket": "equity",
+        "size_metric": 334618820608.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "KO",
+        "market_bucket": "equity",
+        "size_metric": 326200983552.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "GE",
+        "market_bucket": "equity",
+        "size_metric": 323933339648.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "AMAT",
+        "market_bucket": "equity",
+        "size_metric": 310222094336.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "MS",
+        "market_bucket": "equity",
+        "size_metric": 301225017344.0,
+        "candidate_fail_reasons": ""
+      }
+    ],
+    "review_preview_rows": [
+      {
+        "symbol": "MMM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 81986125824.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AOS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9037938688.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ABT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 167747223552.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ABBV",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 371068633088.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ACN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 121234571264.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ADBE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 99899588608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AMD",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 454900940800.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AES",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 10321712128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AFL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 60304547840.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "A",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 34232082432.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "APD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 65556602880.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ABNB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 84915159040.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AKAM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14164328448.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ALB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23709411328.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ARE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 8371274240.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ALGN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13666365440.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ALLE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12525553664.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LNT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 18761203712.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ALL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 56199888896.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GOOGL",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 4110318829568.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GOOG",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 4082132844544.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 107904303104.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AMZN",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 2730612228096.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AMCR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19281166336.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AEE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 31131785216.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AEP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 72712486912.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AXP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 230149586944.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AIG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 42356019200.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AMT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 84860706816.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AWK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25501628416.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AMP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 42609811456.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AME",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 54203752448.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AMGN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 191503777792.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "APH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 186000556032.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ADI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 180161986560.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AON",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 71968923648.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "APA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12434394112.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "APO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 72477368320.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AAPL",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 3976891465728.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AMAT",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 310222094336.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "APTV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15159177216.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ACGL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 34968178688.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ADM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32127944704.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ANET",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 206466203648.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AJG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 57422000128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AIZ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11350937600.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "T",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 186180337664.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ATO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 30736900096.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ADSK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 51613519872.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ADP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 80533831680.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AZO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 59225989120.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AVB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24359114752.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AVY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13302031360.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AXON",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32415940608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BKR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 59634372608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BALL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 17310595072.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BAC",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 386868674560.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BAX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9790729216.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BDX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 57604923392.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BRK.B",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": null,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BBY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13629210624.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TECH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9237002240.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BIIB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25935167488.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BLK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 164980588544.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 159774097408.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "XYZ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 43217137664.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 93863837696.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 177588994048.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BKNG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 151097704448.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BSX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 95241527296.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BMY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 122810392576.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "AVGO",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 1912369053696.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 18815805440.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BRO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23283027968.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BF-B",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13334513664.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BLDR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9849381888.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23123519488.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BXP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 10231237632.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CHRW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 21825638400.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CDNS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 85444976640.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CZR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 5588474880.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CPT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 10812488704.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CPB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 6265548288.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "COF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 129567006720.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CAH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 50364665856.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KMX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 5818904064.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CCL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 40778510336.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CARR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 51170365440.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CAT",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 372154531840.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CBOE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 31483430912.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CBRE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 44778508288.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CDW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 17286428672.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "COR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 63185510400.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CNC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 18849640448.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CNP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 28106125312.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 17518245888.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CRL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9027111936.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SCHW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 161729036288.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CHTR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 30061064192.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CVX",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 363969708032.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CMG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 47397056512.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 129262870528.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CHD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22927140864.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 74605576192.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CINF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25835347968.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CTAS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 72071692288.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CSCO",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 340050968576.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "C",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 231557349376.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CFG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 27635724288.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CLX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12776835072.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CME",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 104035221504.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CMS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23898998784.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KO",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 326200983552.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CTSH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29441433600.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "COIN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 56473042944.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 68797390848.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CMCSA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 108023250944.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CAG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 7084267008.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "COP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 141180174336.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ED",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 40375283712.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "STZ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 28401674240.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CEG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 106808090624.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "COO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13698981888.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CPRT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32191428608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GLW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 141153320960.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CPAY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22714849280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CTVA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 53896077312.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CSGP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16834241536.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "COST",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 440631394304.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CTRA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23304531968.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CRWD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 107610996736.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CCI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 38553055232.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CSX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 80667893760.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CMI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 86290604032.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CVS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 99375603712.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DHR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 137937698816.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DRI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23290365952.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DDOG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 44282724352.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DVA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9873931264.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DAY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": null,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DECK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16335809536.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 159033786368.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DELL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 130056151040.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DAL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 47408697344.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DVN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 27281883136.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DXCM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24256555008.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FANG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 50222583808.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DLR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 70982320128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 27842113536.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DLTR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 20986966016.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "D",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 55040770048.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DPZ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12521719808.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DASH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 80075636736.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DOV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29748879360.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DOW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25801953280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DHI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 44041908224.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DTE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 30523963392.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DUK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 99333914624.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19575734272.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EMN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 8461893632.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ETN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 158189502464.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EBAY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 47247560704.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ECL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 78224326656.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EIX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 27212849152.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 47036088320.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 50955411456.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ELV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 71199326208.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EMR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 81888051200.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ENPH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 4307885056.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ETR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 53008502784.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EOG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 68617261056.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EPAM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 7068242944.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EQT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 36363960320.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EFX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23530985472.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EQIX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 106816135168.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EQR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24380172288.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ERIE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12733628416.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ESS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 17599295488.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 27641372672.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14173913088.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EVRG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 18915538944.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ES",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25982187520.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EXC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 47838552064.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EXE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23092656128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EXPE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32569767936.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EXPD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19655745536.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "EXR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 31991394304.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "XOM",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 605195075584.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FFIV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 17745229824.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FDS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 8622610432.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FICO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25543995392.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FAST",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 52432683008.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FRT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9718237184.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FDX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 92992208896.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FIS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25057503232.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FITB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 45735485440.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FSLR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 20422090752.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 28972566528.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": null,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "F",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 51702849536.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FTNT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 60458594304.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FTV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19253618688.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FOXA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 27591188480.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FOX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 27170897920.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "BEN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14194862080.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "FCX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 100561002496.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GRMN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 52137283584.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 10862731264.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GE",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 323933339648.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GEHC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 34020993024.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GEV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 269978238976.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GEN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12358990848.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GNRC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12487823360.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 90876911616.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GIS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 18873636864.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 76340707328.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GPC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15893309440.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GILD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 170864115712.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GPN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 20214472704.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11919422464.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GDDY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11495144448.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 273583931392.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HAL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 31190302720.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HIG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 38553268224.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HAS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13704903680.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HCA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 110212202496.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DOC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11989701632.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HSIC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9016901632.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HSY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 39298736128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HPE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 35040546816.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HLT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 78359265280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HOLX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16968846336.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HD",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 347862663168.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HON",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 148841955328.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HRL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11583482880.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HST",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14655969280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HWM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 102917308416.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HPQ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 18107244544.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HUBB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 28527044608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HUM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24521984000.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HBAN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 34468065280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "HII",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15555558400.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IBM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 236779388928.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IEX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15316395008.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IDXX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 46740103168.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ITW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 78609432576.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "INCY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19350177792.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 33916274688.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PODD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14386447360.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "INTC",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 344090345472.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ICE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 91425660928.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IFF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19283441664.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19654526976.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IPG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": null,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "INTU",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 109151617024.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ISRG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 167299137536.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IVZ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11045635072.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "INVH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16380298240.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IQV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29829865472.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "IRM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 34995408896.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "JBHT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23187460096.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "JBL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 33941749760.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "JKHY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11141373952.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "J",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15160177664.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "JNJ",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 566025060352.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "JCI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 86411501568.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "JPM",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 840934686720.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "K",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": null,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KVUE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 33843515392.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KDP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 35821232128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KEY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23751915520.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KEYS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 57732878336.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KMB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32800903168.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KIM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16266605568.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KMI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 70815989760.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KKR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 97140670464.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KLAC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 232960589824.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KHC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 26628339712.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "KR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 42692001792.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LHX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 65632825344.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22403737600.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LRCX",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 334618820608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 6157934080.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LVS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 38823002112.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LDOS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19566852096.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LEN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22975938560.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LII",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16956483584.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LLY",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 823605198848.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LIN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 229875941376.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LYV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 36865077248.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LKQ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 7970180608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LMT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 136894496768.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "L",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22985199616.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LOW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 141480378368.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LULU",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19555764224.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LYB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 21609402368.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MTB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32463108096.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MPC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 63039025152.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MKTX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 6274736128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MAR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 99774636032.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MMC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": null,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MLM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 37825904640.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MAS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13615206400.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MA",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 467101908992.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MTCH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 8361605632.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MKC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14541728768.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MCD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 221483220992.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MCK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 106733813760.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MDT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 110735073280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MRK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 292113121280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "META",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 1734554157056.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MET",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 51373780992.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MTD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 26998435840.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MGM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 10573758464.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MCHP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 42906632192.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MU",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 517359271936.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MSFT",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 3159392256000.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MAA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15294345216.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MRNA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 21631827968.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MHK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 6736977408.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MOH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 7680307712.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TAP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 8323152384.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MDLZ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 73253289984.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MPWR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 71961796608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MNST",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 74778042368.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MCO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 81379811328.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MS",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 301225017344.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MOS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 7763003392.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MSI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 73603268608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "MSCI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 41830240256.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NDAQ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 50835726336.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NTAP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 20695326720.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NFLX",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 411208777728.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NEM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 126878760960.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NWSA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15016058880.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NWS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16473011200.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NEE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 190690525184.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NKE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 68239278080.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23211251712.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NDSN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15825808384.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NSC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 68282249216.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NTRS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 30245539840.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NOC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 95030829056.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NCLH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 9719065600.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NRG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 35712118784.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NUE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 44695072768.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NVDA",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 4870476660736.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NVR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19591661568.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NXPI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 54469206016.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ORLY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 78541078528.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "OXY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 53011066880.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ODFL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 45566730240.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "OMC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24482435072.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ON",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32577617920.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "OKE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 52545937408.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ORCL",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 506543931392.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "OTIS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32003465216.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PCAR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 66544054272.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PKG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19092113408.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PLTR",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 352078594048.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PANW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 136808521728.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PSKY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13038277632.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 125471850496.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PAYX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32833775616.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PAYC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 6781130752.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PYPL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 46834204672.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PNR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14989772800.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PEP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 214691741696.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PFE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 156458237952.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PCG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 37779091456.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 244954202112.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PSX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 62498390016.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PNW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12579405824.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PNC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 90605174784.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "POOL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 8476281856.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PPG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25904695296.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PPL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29526243328.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PFG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 20761964544.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PG",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 343628316672.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PGR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 119524048896.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PLD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 134865805312.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PRU",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 35370721280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PEG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 40915652608.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PTC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16707053568.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PSA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 54326824960.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PHM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24608434176.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "PWR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 90067042304.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "QCOM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 145344921600.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DGX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 21693071360.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "RL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23506139136.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "RJF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29874728960.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "RTX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 266085662720.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "O",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 60674560000.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "REG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 15064007680.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "REGN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 79256027136.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "RF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24324982784.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "RSG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 64207278080.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "RMD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 33229955072.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "RVTY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 10364168192.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ROK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 46836293632.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ROL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 26750380032.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ROP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 37056475136.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ROST",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 73646792704.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "RCL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 78868594688.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SPGI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 132616396800.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "CRM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 171105665024.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SBAC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23694342144.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SLB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 79409954816.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "STX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 122808467456.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SRE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 61057196032.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "NOW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 101320785920.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SHW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 86096781312.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SPG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 78431485952.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SWKS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 8941634560.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SJM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 10164768768.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22265065472.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SNA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19736500224.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SOLV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 12219979776.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 106518962176.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "LUV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 21220022272.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SWK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11102203904.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SBUX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 114294571008.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "STT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 41130532864.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "STLD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29168449536.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "STE",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22154723328.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SYK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 131122315264.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SMCI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 17155768320.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SYF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 28140167168.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SNPS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 86394478592.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "SYY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 36513673216.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TMUS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 221978836992.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TROW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 21187526656.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TTWO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 39751614464.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TPR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32037920768.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TRGP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 50582458368.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TGT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 57571528704.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TEL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 72098185216.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TDY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29487435776.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TER",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 58971238400.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TSLA",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 1508027400192.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TXN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 208996859904.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TPL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29103675392.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TXT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16043843584.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TMO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 195524870144.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TJX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 178890686464.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TKO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14685873152.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TTD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 10807059456.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TSCO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23614752768.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 106226286592.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TDG",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 72023556096.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TRV",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 64176164864.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TRMB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 16177387520.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TFC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 64870580224.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TYL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 14709797888.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "TSN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22698532864.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "USB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 88673878016.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "UBER",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 159030607872.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "UDR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 13199707136.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ULTA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24392097792.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "UNP",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 149719728128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "UAL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 33192120320.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "UPS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 90592124928.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "URI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 50356310016.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "UNH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 293941739520.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "UHS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11184048128.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VLO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 66338971648.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VTR",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 40395350016.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VLTO",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 22832570368.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VRSN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25145516032.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VRSK",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 24637800448.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VZ",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 197661786112.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VRTX",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 112137027584.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VTRS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 17052944384.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VICI",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 30626320384.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "V",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 611034333184.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VST",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 55552548864.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "VMC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 38414135296.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WRB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 25336010752.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "GWW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 54999134208.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WAB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 45110317056.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WBA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": null,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WMT",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "size_metric": 1008229875712.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "DIS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 188085420032.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WBD",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 68898529280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 90149617664.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WAT",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32078518272.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WEC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 37684322304.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WFC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 250147569664.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WELL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 148617183232.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WST",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 19743873024.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WDC",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 127870337024.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 18062116864.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WSM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 23803805696.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WMB",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 86700556288.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WTW",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 28001660928.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WDAY",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 32380561408.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "WYNN",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11440920576.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "XEL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 50507202560.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "XYL",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 29610977280.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "YUM",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 44885344256.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ZBRA",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 11611209728.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ZBH",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 18667157504.0,
+        "asset_type": "EQUITY"
+      },
+      {
+        "symbol": "ZTS",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<300000000000.0",
+        "market_bucket": "equity",
+        "size_metric": 51529129984.0,
+        "asset_type": "EQUITY"
+      }
+    ],
+    "top_fail_reasons": [
+      {
+        "reason": "size_metric<300000000000.0",
+        "count": 468
+      }
+    ]
+  },
+  "hard_filter": {
+    "rows": 35,
+    "status_counts": {
+      "FAIL": 33,
+      "PASS": 2
+    },
+    "artifacts": {
+      "candidate_metrics_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step2_candidate_metrics.csv",
+      "hard_filter_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step2_hard_filter.csv",
+      "hard_filter_pass_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step2_hard_filter_pass.csv",
+      "screen_config_json": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step2_hard_filter_config.json"
+    },
+    "market_data_source": "ibkr",
+    "ibkr_connection": "127.0.0.1:4001",
+    "step2_reuse_same_day_cache": false,
+    "preview_rows": [
+      {
+        "ticker": "XOM",
+        "status": "PASS",
+        "fail_reasons": "",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 146.34,
+        "selected_strike": 160.0,
+        "selected_call_otm_pct": 0.09334426677600116,
+        "selected_call_bid": 1.2,
+        "selected_call_ask": 1.28,
+        "dividend_yield": 0.02760694273609403,
+        "annualized_call_yield": 0.11045705695152189,
+        "selected_call_open_interest": 5644.0,
+        "selected_call_volume": 2986.0,
+        "selected_call_spread_pct": 0.06451612903225812,
+        "beta_1y": -0.062215616441844465,
+        "realized_vol_1y": 0.23429590477996237,
+        "score_total": 0.532385
+      },
+      {
+        "ticker": "BAC",
+        "status": "PASS",
+        "fail_reasons": "",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 53.99,
+        "selected_strike": 57.5,
+        "selected_call_otm_pct": 0.06501203926653076,
+        "selected_call_bid": 0.26,
+        "selected_call_ask": 0.27,
+        "dividend_yield": 0.02037414335988146,
+        "annualized_call_yield": 0.06398340962612123,
+        "selected_call_open_interest": 20668.0,
+        "selected_call_volume": 877.0,
+        "selected_call_spread_pct": 0.03773584905660381,
+        "beta_1y": 1.0067556239393,
+        "realized_vol_1y": 0.2183798027260644,
+        "score_total": 0.446826
+      },
+      {
+        "ticker": "GOOG",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 339.49,
+        "selected_strike": 365.0,
+        "selected_call_otm_pct": 0.07514212495213402,
+        "selected_call_bid": 4.35,
+        "selected_call_ask": 4.5,
+        "dividend_yield": 0.0024742996848213495,
+        "annualized_call_yield": 0.16991085367547118,
+        "selected_call_open_interest": 12308.0,
+        "selected_call_volume": 1384.0,
+        "selected_call_spread_pct": 0.033898305084745846,
+        "beta_1y": 1.1495640094295718,
+        "realized_vol_1y": 0.2803019933476528,
+        "score_total": 0.706296
+      },
+      {
+        "ticker": "AMZN",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield_missing;beta_1y>1.2",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 252.03500000000003,
+        "selected_strike": 270.0,
+        "selected_call_otm_pct": 0.07127978256988099,
+        "selected_call_bid": 4.9,
+        "selected_call_ask": 5.05,
+        "dividend_yield": null,
+        "annualized_call_yield": 0.25731616073731256,
+        "selected_call_open_interest": 15311.0,
+        "selected_call_volume": 1742.0,
+        "selected_call_spread_pct": 0.030150753768844116,
+        "beta_1y": 1.5235112052843447,
+        "realized_vol_1y": 0.3139720609809223,
+        "score_total": 0.677662
+      },
+      {
+        "ticker": "GOOGL",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 341.6,
+        "selected_strike": 370.0,
+        "selected_call_otm_pct": 0.08313817330210771,
+        "selected_call_bid": 4.05,
+        "selected_call_ask": 4.2,
+        "dividend_yield": 0.0024590163934426227,
+        "annualized_call_yield": 0.15741311893609902,
+        "selected_call_open_interest": 9500.0,
+        "selected_call_volume": 1870.0,
+        "selected_call_spread_pct": 0.03636363636363645,
+        "beta_1y": 1.1786096567840227,
+        "realized_vol_1y": 0.286608149126098,
+        "score_total": 0.673835
+      },
+      {
+        "ticker": "TSLA",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield_missing;beta_1y>1.2;realized_vol_1y>0.45;max_drawdown_3y>0.45",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 400.92,
+        "selected_strike": 435.0,
+        "selected_call_otm_pct": 0.0850044896737503,
+        "selected_call_bid": 9.05,
+        "selected_call_ask": 9.15,
+        "dividend_yield": null,
+        "annualized_call_yield": 0.29588197146562906,
+        "selected_call_open_interest": 6283.0,
+        "selected_call_volume": 1164.0,
+        "selected_call_spread_pct": 0.010989010989010948,
+        "beta_1y": 2.1049796940305368,
+        "realized_vol_1y": 0.4898821207885814,
+        "score_total": 0.620059
+      },
+      {
+        "ticker": "PLTR",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield_missing;beta_1y>1.2;realized_vol_1y>0.45",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 146.43,
+        "selected_strike": 160.0,
+        "selected_call_otm_pct": 0.09267226661203298,
+        "selected_call_bid": 4.85,
+        "selected_call_ask": 5.0,
+        "dividend_yield": null,
+        "annualized_call_yield": 0.4384408444795661,
+        "selected_call_open_interest": 12432.0,
+        "selected_call_volume": 2289.0,
+        "selected_call_spread_pct": 0.030456852791878247,
+        "beta_1y": 1.9110085099030396,
+        "realized_vol_1y": 0.5317073003401408,
+        "score_total": 0.610849
+      },
+      {
+        "ticker": "AVGO",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;beta_1y>1.2",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 403.35,
+        "selected_strike": 440.0,
+        "selected_call_otm_pct": 0.09086401388372378,
+        "selected_call_bid": 6.05,
+        "selected_call_ask": 6.45,
+        "dividend_yield": 0.006148506260071898,
+        "annualized_call_yield": 0.20199135809027963,
+        "selected_call_open_interest": 4603.0,
+        "selected_call_volume": 477.0,
+        "selected_call_spread_pct": 0.06400000000000006,
+        "beta_1y": 1.8948810335658295,
+        "realized_vol_1y": 0.4270181587992541,
+        "score_total": 0.601025
+      },
+      {
+        "ticker": "MU",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;beta_1y>1.2;realized_vol_1y>0.45;max_drawdown_3y>0.45",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 459.65,
+        "selected_strike": 500.0,
+        "selected_call_otm_pct": 0.08778418361797025,
+        "selected_call_bid": 20.9,
+        "selected_call_ask": 21.1,
+        "dividend_yield": 0.0010769063417817905,
+        "annualized_call_yield": 0.5955618405308387,
+        "selected_call_open_interest": 7712.0,
+        "selected_call_volume": 2858.0,
+        "selected_call_spread_pct": 0.00952380952380966,
+        "beta_1y": 2.3766840529647526,
+        "realized_vol_1y": 0.588708123787154,
+        "score_total": 0.59
+      },
+      {
+        "ticker": "ORCL",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;beta_1y>1.2;realized_vol_1y>0.45;max_drawdown_3y>0.45",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 173.92,
+        "selected_strike": 190.0,
+        "selected_call_otm_pct": 0.09245630174793007,
+        "selected_call_bid": 4.4,
+        "selected_call_ask": 4.55,
+        "dividend_yield": 0.011499540018399266,
+        "annualized_call_yield": 0.33541180674201604,
+        "selected_call_open_interest": 19510.0,
+        "selected_call_volume": 3594.0,
+        "selected_call_spread_pct": 0.03351955307262558,
+        "beta_1y": 1.6269010299592663,
+        "realized_vol_1y": 0.6167004892085705,
+        "score_total": 0.59
+      },
+      {
+        "ticker": "AMD",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield_missing;beta_1y>1.2;realized_vol_1y>0.45;max_drawdown_3y>0.45",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 278.57,
+        "selected_strike": 300.0,
+        "selected_call_otm_pct": 0.07692859963384424,
+        "selected_call_bid": 10.05,
+        "selected_call_ask": 10.15,
+        "dividend_yield": null,
+        "annualized_call_yield": 0.4726306288750199,
+        "selected_call_open_interest": 10299.0,
+        "selected_call_volume": 1848.0,
+        "selected_call_spread_pct": 0.009900990099009865,
+        "beta_1y": 2.101022338982034,
+        "realized_vol_1y": 0.5806497424002435,
+        "score_total": 0.59
+      },
+      {
+        "ticker": "NVDA",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;beta_1y>1.2",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 200.74,
+        "selected_strike": 215.0,
+        "selected_call_otm_pct": 0.07103716249875447,
+        "selected_call_bid": 2.31,
+        "selected_call_ask": 2.33,
+        "dividend_yield": 0.00019926272790674504,
+        "annualized_call_yield": 0.1506568553494926,
+        "selected_call_open_interest": 29793.0,
+        "selected_call_volume": 15849.0,
+        "selected_call_spread_pct": 0.00862068965517242,
+        "beta_1y": 1.741712091721772,
+        "realized_vol_1y": 0.3413869112728139,
+        "score_total": 0.588277
+      },
+      {
+        "ticker": "GE",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 306.985,
+        "selected_strike": 330.0,
+        "selected_call_otm_pct": 0.07497108979266076,
+        "selected_call_bid": 4.7,
+        "selected_call_ask": 5.15,
+        "dividend_yield": 0.005049106633874619,
+        "annualized_call_yield": 0.20913364775849913,
+        "selected_call_open_interest": 1347.0,
+        "selected_call_volume": 96.0,
+        "selected_call_spread_pct": 0.09137055837563454,
+        "beta_1y": 1.1843395541696917,
+        "realized_vol_1y": 0.29543011552452736,
+        "score_total": 0.576351
+      },
+      {
+        "ticker": "META",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;beta_1y>1.2",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 683.47,
+        "selected_strike": 740.0,
+        "selected_call_otm_pct": 0.0827102872108505,
+        "selected_call_bid": 11.45,
+        "selected_call_ask": 11.75,
+        "dividend_yield": 0.0030725562204632242,
+        "annualized_call_yield": 0.2212449496163485,
+        "selected_call_open_interest": 1710.0,
+        "selected_call_volume": 192.0,
+        "selected_call_spread_pct": 0.025862068965517303,
+        "beta_1y": 1.6351696742405086,
+        "realized_vol_1y": 0.3556305964402294,
+        "score_total": 0.56642
+      },
+      {
+        "ticker": "MSFT",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 420.94,
+        "selected_strike": 455.0,
+        "selected_call_otm_pct": 0.08091414453366275,
+        "selected_call_bid": 5.8,
+        "selected_call_ask": 6.2,
+        "dividend_yield": 0.008267211479070651,
+        "annualized_call_yield": 0.18580863238059037,
+        "selected_call_open_interest": 1521.0,
+        "selected_call_volume": 671.0,
+        "selected_call_spread_pct": 0.06666666666666672,
+        "beta_1y": 0.9571905005955247,
+        "realized_vol_1y": 0.24484235119382042,
+        "score_total": 0.562867
+      },
+      {
+        "ticker": "NFLX",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield_missing",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 97.08,
+        "selected_strike": 105.0,
+        "selected_call_otm_pct": 0.08158220024721885,
+        "selected_call_bid": 0.86,
+        "selected_call_ask": 0.88,
+        "dividend_yield": null,
+        "annualized_call_yield": 0.11682191417976337,
+        "selected_call_open_interest": 40668.0,
+        "selected_call_volume": 12823.0,
+        "selected_call_spread_pct": 0.022988505747126457,
+        "beta_1y": 0.4513691142050414,
+        "realized_vol_1y": 0.33717426730714095,
+        "score_total": 0.536455
+      },
+      {
+        "ticker": "AAPL",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 270.3,
+        "selected_strike": 290.0,
+        "selected_call_otm_pct": 0.07288198298187187,
+        "selected_call_bid": 2.08,
+        "selected_call_ask": 2.14,
+        "dividend_yield": 0.003847576766555679,
+        "annualized_call_yield": 0.10175862797949368,
+        "selected_call_open_interest": 17741.0,
+        "selected_call_volume": 5852.0,
+        "selected_call_spread_pct": 0.02843601895734599,
+        "beta_1y": 0.9948024245049171,
+        "realized_vol_1y": 0.23571658909537158,
+        "score_total": 0.52524
+      },
+      {
+        "ticker": "LLY",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 921.02,
+        "selected_strike": 990.0,
+        "selected_call_otm_pct": 0.07489522485939504,
+        "selected_call_bid": 19.35,
+        "selected_call_ask": 21.45,
+        "dividend_yield": 0.006764239647347506,
+        "annualized_call_yield": 0.28873267836591104,
+        "selected_call_open_interest": 593.0,
+        "selected_call_volume": 5.0,
+        "selected_call_spread_pct": 0.10294117647058813,
+        "beta_1y": 0.6527183288963653,
+        "realized_vol_1y": 0.414526934155797,
+        "score_total": 0.520015
+      },
+      {
+        "ticker": "WMT",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 127.22,
+        "selected_strike": 135.0,
+        "selected_call_otm_pct": 0.06115390661845632,
+        "selected_call_bid": 0.81,
+        "selected_call_ask": 0.85,
+        "dividend_yield": 0.00748703034114133,
+        "annualized_call_yield": 0.08504671323017497,
+        "selected_call_open_interest": 12501.0,
+        "selected_call_volume": 596.0,
+        "selected_call_spread_pct": 0.048192771084337255,
+        "beta_1y": 0.16424454267118987,
+        "realized_vol_1y": 0.21852123153694164,
+        "score_total": 0.500328
+      },
+      {
+        "ticker": "CAT",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;beta_1y>1.2",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 796.97,
+        "selected_strike": 860.0,
+        "selected_call_otm_pct": 0.07908704217222717,
+        "selected_call_bid": 13.4,
+        "selected_call_ask": 14.35,
+        "dividend_yield": 0.007453229105236082,
+        "annualized_call_yield": 0.2269477341860869,
+        "selected_call_open_interest": 192.0,
+        "selected_call_volume": 33.0,
+        "selected_call_spread_pct": 0.06846846846846842,
+        "beta_1y": 1.4799587538666608,
+        "realized_vol_1y": 0.31981904845925924,
+        "score_total": 0.485863
+      },
+      {
+        "ticker": "MS",
+        "status": "FAIL",
+        "fail_reasons": "beta_1y>1.2",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 189.76,
+        "selected_strike": 200.0,
+        "selected_call_otm_pct": 0.053962900505902134,
+        "selected_call_bid": 1.79,
+        "selected_call_ask": 1.89,
+        "dividend_yield": 0.020684021922428332,
+        "annualized_call_yield": 0.1264002649963864,
+        "selected_call_open_interest": 2812.0,
+        "selected_call_volume": 722.0,
+        "selected_call_spread_pct": 0.05434782608695645,
+        "beta_1y": 1.3655265792705602,
+        "realized_vol_1y": 0.2585100549250656,
+        "score_total": 0.478183
+      },
+      {
+        "ticker": "AMAT",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;selected_call_spread_pct>0.08;beta_1y>1.2;max_drawdown_3y>0.45",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 393.6,
+        "selected_strike": 430.0,
+        "selected_call_otm_pct": 0.09247967479674801,
+        "selected_call_bid": 11.25,
+        "selected_call_ask": 12.35,
+        "dividend_yield": 0.00467479674796748,
+        "annualized_call_yield": 0.39080647502903604,
+        "selected_call_open_interest": 1600.0,
+        "selected_call_volume": 106.0,
+        "selected_call_spread_pct": 0.09322033898305081,
+        "beta_1y": 1.9942237384044235,
+        "realized_vol_1y": 0.4479397673651606,
+        "score_total": 0.474222
+      },
+      {
+        "ticker": "LRCX",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;beta_1y>1.2;realized_vol_1y>0.45;max_drawdown_3y>0.45",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 266.85,
+        "selected_strike": 290.0,
+        "selected_call_otm_pct": 0.08675285741053007,
+        "selected_call_bid": 10.35,
+        "selected_call_ask": 10.9,
+        "dividend_yield": 0.0037848978827056397,
+        "annualized_call_yield": 0.5190349045745335,
+        "selected_call_open_interest": 708.0,
+        "selected_call_volume": 99.0,
+        "selected_call_spread_pct": 0.05176470588235301,
+        "beta_1y": 2.381982286802556,
+        "realized_vol_1y": 0.4872392717815161,
+        "score_total": 0.470204
+      },
+      {
+        "ticker": "CSCO",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 86.15,
+        "selected_strike": 92.5,
+        "selected_call_otm_pct": 0.07370864770748686,
+        "selected_call_bid": 0.93,
+        "selected_call_ask": 1.02,
+        "dividend_yield": 0.019152640742890307,
+        "annualized_call_yield": 0.14753129922891967,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 925.0,
+        "selected_call_spread_pct": 0.09230769230769227,
+        "beta_1y": 0.9045731530649359,
+        "realized_vol_1y": 0.2524988362775942,
+        "score_total": 0.468432
+      },
+      {
+        "ticker": "CVX",
+        "status": "FAIL",
+        "fail_reasons": "selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 183.61,
+        "selected_strike": 200.0,
+        "selected_call_otm_pct": 0.08926529056151611,
+        "selected_call_bid": 1.18,
+        "selected_call_ask": 1.34,
+        "dividend_yield": 0.037634115788900385,
+        "annualized_call_yield": 0.08945591198736451,
+        "selected_call_open_interest": 10443.0,
+        "selected_call_volume": 1968.0,
+        "selected_call_spread_pct": 0.1269841269841271,
+        "beta_1y": 0.0594782055687473,
+        "realized_vol_1y": 0.2189912617235685,
+        "score_total": 0.466223
+      },
+      {
+        "ticker": "INTC",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield_missing;beta_1y>1.2;realized_vol_1y>0.45;max_drawdown_3y>0.45",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 68.03,
+        "selected_strike": 72.5,
+        "selected_call_otm_pct": 0.06570630604145222,
+        "selected_call_bid": 3.9,
+        "selected_call_ask": 4.0,
+        "dividend_yield": null,
+        "annualized_call_yield": 0.7568877176035782,
+        "selected_call_open_interest": 0.0,
+        "selected_call_volume": 392.0,
+        "selected_call_spread_pct": 0.025316455696202552,
+        "beta_1y": 1.965335595137078,
+        "realized_vol_1y": 0.6365600799177209,
+        "score_total": 0.45
+      },
+      {
+        "ticker": "ABBV",
+        "status": "FAIL",
+        "fail_reasons": "selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 209.59,
+        "selected_strike": 230.0,
+        "selected_call_otm_pct": 0.09738060021947614,
+        "selected_call_bid": 1.32,
+        "selected_call_ask": 1.55,
+        "dividend_yield": 0.0321580228064316,
+        "annualized_call_yield": 0.08925163414285033,
+        "selected_call_open_interest": 3130.0,
+        "selected_call_volume": 657.0,
+        "selected_call_spread_pct": 0.1602787456445993,
+        "beta_1y": 0.4096192990839762,
+        "realized_vol_1y": 0.2533807940500003,
+        "score_total": 0.420934
+      },
+      {
+        "ticker": "V",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 316.69,
+        "selected_strike": 340.0,
+        "selected_call_otm_pct": 0.07360510278190024,
+        "selected_call_bid": 1.52,
+        "selected_call_ask": 1.59,
+        "dividend_yield": 0.007957308408854084,
+        "annualized_call_yield": 0.06400750170288205,
+        "selected_call_open_interest": 4553.0,
+        "selected_call_volume": 9640.0,
+        "selected_call_spread_pct": 0.04501607717041804,
+        "beta_1y": 0.7164696705053403,
+        "realized_vol_1y": 0.208335792635129,
+        "score_total": 0.415842
+      },
+      {
+        "ticker": "KO",
+        "status": "FAIL",
+        "fail_reasons": "annualized_call_yield<0.06;selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 75.98,
+        "selected_strike": 82.5,
+        "selected_call_otm_pct": 0.08581205580415885,
+        "selected_call_bid": 0.12,
+        "selected_call_ask": 0.16,
+        "dividend_yield": 0.027112397999473545,
+        "annualized_call_yield": 0.024019478810213216,
+        "selected_call_open_interest": 6041.0,
+        "selected_call_volume": 59.0,
+        "selected_call_spread_pct": 0.28571428571428575,
+        "beta_1y": -0.062443824309888034,
+        "realized_vol_1y": 0.15929530012605267,
+        "score_total": 0.371062
+      },
+      {
+        "ticker": "PG",
+        "status": "FAIL",
+        "fail_reasons": "annualized_call_yield<0.06;selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 147.34,
+        "selected_strike": 160.0,
+        "selected_call_otm_pct": 0.08592371385910136,
+        "selected_call_bid": 0.38,
+        "selected_call_ask": 0.43,
+        "dividend_yield": 0.028690104520157456,
+        "annualized_call_yield": 0.03583184665205841,
+        "selected_call_open_interest": 8100.0,
+        "selected_call_volume": 241.0,
+        "selected_call_spread_pct": 0.12345679012345676,
+        "beta_1y": 0.08881010277962947,
+        "realized_vol_1y": 0.18150803611114305,
+        "score_total": 0.337803
+      },
+      {
+        "ticker": "JNJ",
+        "status": "FAIL",
+        "fail_reasons": "annualized_call_yield<0.06;selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 235.28,
+        "selected_strike": 250.0,
+        "selected_call_otm_pct": 0.0625637538252295,
+        "selected_call_bid": 0.89,
+        "selected_call_ask": 1.1,
+        "dividend_yield": 0.022101326079564776,
+        "annualized_call_yield": 0.05512808447078254,
+        "selected_call_open_interest": 2908.0,
+        "selected_call_volume": 194.0,
+        "selected_call_spread_pct": 0.2110552763819096,
+        "beta_1y": 0.03121351008224425,
+        "realized_vol_1y": 0.16605824459579718,
+        "score_total": 0.319993
+      },
+      {
+        "ticker": "JPM",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;annualized_call_yield<0.06;selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 311.19,
+        "selected_strike": 335.0,
+        "selected_call_otm_pct": 0.07651274141199904,
+        "selected_call_bid": 0.85,
+        "selected_call_ask": 1.03,
+        "dividend_yield": 0.01895947813233073,
+        "annualized_call_yield": 0.03937649483778858,
+        "selected_call_open_interest": 1814.0,
+        "selected_call_volume": 260.0,
+        "selected_call_spread_pct": 0.19148936170212771,
+        "beta_1y": 0.9981676365536297,
+        "realized_vol_1y": 0.2121972045829702,
+        "score_total": 0.284516
+      },
+      {
+        "ticker": "HD",
+        "status": "FAIL",
+        "fail_reasons": "selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 349.41,
+        "selected_strike": 375.0,
+        "selected_call_otm_pct": 0.07323774362496782,
+        "selected_call_bid": 1.88,
+        "selected_call_ask": 2.17,
+        "dividend_yield": 0.026415958329755875,
+        "annualized_call_yield": 0.07554827116731469,
+        "selected_call_open_interest": 556.0,
+        "selected_call_volume": 66.0,
+        "selected_call_spread_pct": 0.1432098765432099,
+        "beta_1y": 0.8191306719317963,
+        "realized_vol_1y": 0.23064011846491247,
+        "score_total": 0.257992
+      },
+      {
+        "ticker": "MA",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;selected_call_spread_pct>0.08;option_liquidity<oi:500|vol:10",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 522.49,
+        "selected_strike": 565.0,
+        "selected_call_otm_pct": 0.08136040881165196,
+        "selected_call_bid": 2.4,
+        "selected_call_ask": 3.1,
+        "dividend_yield": 0.006239353863231832,
+        "annualized_call_yield": 0.06861033567286319,
+        "selected_call_open_interest": 57.0,
+        "selected_call_volume": 1.0,
+        "selected_call_spread_pct": 0.25454545454545463,
+        "beta_1y": 0.7112133716434742,
+        "realized_vol_1y": 0.21443851605044123,
+        "score_total": 0.257371
+      },
+      {
+        "ticker": "COST",
+        "status": "FAIL",
+        "fail_reasons": "dividend_yield<0.02;annualized_call_yield<0.06;selected_call_spread_pct>0.08",
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 996.05,
+        "selected_strike": 1075.0,
+        "selected_call_otm_pct": 0.07926308920234937,
+        "selected_call_bid": 1.29,
+        "selected_call_ask": 2.06,
+        "dividend_yield": 0.005220621454746248,
+        "annualized_call_yield": 0.021921411002029444,
+        "selected_call_open_interest": 702.0,
+        "selected_call_volume": 16.0,
+        "selected_call_spread_pct": 0.4597014925373134,
+        "beta_1y": 0.20835916451683104,
+        "realized_vol_1y": 0.18830644477130054,
+        "score_total": 0.256284
+      }
+    ],
+    "top_fail_reasons": [
+      {
+        "reason": "dividend_yield<0.02",
+        "count": 20
+      },
+      {
+        "reason": "beta_1y>1.2",
+        "count": 14
+      },
+      {
+        "reason": "selected_call_spread_pct>0.08",
+        "count": 13
+      },
+      {
+        "reason": "max_drawdown_3y>0.45",
+        "count": 7
+      },
+      {
+        "reason": "realized_vol_1y>0.45",
+        "count": 7
+      },
+      {
+        "reason": "dividend_yield_missing",
+        "count": 6
+      },
+      {
+        "reason": "annualized_call_yield<0.06",
+        "count": 5
+      },
+      {
+        "reason": "option_liquidity<oi:500|vol:10",
+        "count": 1
+      }
+    ]
+  },
+  "ranking": {
+    "rows": 2,
+    "artifacts": {
+      "ranked_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step3_ranked.csv",
+      "scoring_config_json": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260417-112802-sp500/step3_scoring_config.json"
+    },
+    "preview_rows": [
+      {
+        "ticker": "XOM",
+        "score_total": 0.532385,
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 146.34,
+        "selected_strike": 160.0,
+        "selected_call_otm_pct": 0.0933442667760011,
+        "selected_call_bid": 1.2,
+        "selected_call_ask": 1.28,
+        "dividend_yield": 0.027606942736094,
+        "annualized_call_yield": 0.1104570569515218,
+        "combined_income_score_proxy": 0.1380639996876158,
+        "selected_call_open_interest": 5644.0,
+        "selected_call_volume": 2986.0,
+        "selected_call_spread_pct": 0.0645161290322581,
+        "score_dividend": 0.126782,
+        "score_call": 0.420475,
+        "score_liquidity": 0.816129,
+        "score_quality": 0.742138,
+        "score_risk_fit": 1.0
+      },
+      {
+        "ticker": "BAC",
+        "score_total": 0.446826,
+        "selected_expiration": "2026-05-15",
+        "selected_dte": 28,
+        "price": 53.99,
+        "selected_strike": 57.5,
+        "selected_call_otm_pct": 0.0650120392665307,
+        "selected_call_bid": 0.26,
+        "selected_call_ask": 0.27,
+        "dividend_yield": 0.0203741433598814,
+        "annualized_call_yield": 0.0639834096261212,
+        "combined_income_score_proxy": 0.0843575529860026,
+        "selected_call_open_interest": 20668.0,
+        "selected_call_volume": 877.0,
+        "selected_call_spread_pct": 0.0377358490566038,
+        "score_dividend": 0.006236,
+        "score_call": 0.033195,
+        "score_liquidity": 1.0,
+        "score_quality": 0.902058,
+        "score_risk_fit": 1.0
+      }
+    ]
+  }
+}

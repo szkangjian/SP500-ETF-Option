@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: covered-call-dashboard
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python screening_dashboard.py
+    envVars:
+      - key: COVERED_CALL_READ_ONLY
+        value: "true"

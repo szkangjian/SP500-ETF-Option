@@ -1,0 +1,24 @@
+{
+  "config_name": "etf_broad_config.yaml",
+  "workflow_settings": {
+    "source_universe_csv": "etf_broad_universe.csv",
+    "allowed_market_classes": [
+      "equity",
+      "commodity",
+      "fixed_income",
+      "currency",
+      "alternative",
+      "crypto",
+      "other"
+    ],
+    "require_usd": true,
+    "require_us_listing": true,
+    "require_etf_asset_type": true,
+    "min_avg_dollar_volume": 500000000,
+    "min_size_metric": 3000000000,
+    "step2_reuse_same_day_cache": false
+  },
+  "size_median": 3165976448.0,
+  "liquidity_median": 29870248.269893277,
+  "local_enrichment_csv": "out/etf_broad_metrics.csv"
+}

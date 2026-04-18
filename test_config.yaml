@@ -1,0 +1,35 @@
+data:
+  benchmark: SPY
+  history_period: 4y
+  cache_dir: out
+  metrics_filename: test_metrics.csv
+  screened_filename: test_screen.csv
+
+universe:
+  mode: inline
+  tickers: [VZ, SCHD]
+
+screen:
+  option_dte_min: 25
+  option_dte_max: 45
+  option_target_dte: 35
+  target_otm_pct: 0.05
+
+  min_price: 15
+  min_size_metric: 10000000000
+  min_dividend_yield: 0.03
+  min_call_annualized_yield: 0.04
+  min_call_open_interest: 300
+  min_call_volume: 10
+  max_option_spread_pct: 0.12
+
+  min_beta_1y: -0.25
+  max_beta_1y: 1.25
+  min_realized_vol_1y: 0.10
+  max_realized_vol_1y: 0.50
+
+  min_total_return_3y: -0.10
+  max_drawdown_3y: 0.50
+
+output:
+  top_n: 10

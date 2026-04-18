@@ -1,0 +1,51 @@
+data:
+  as_of_date: 2026-04-16
+  benchmark: SPY
+  history_period: 4y
+  market_data_source: ibkr
+  cache_dir: out
+  metrics_filename: ib_step2_smoke_metrics.csv
+  screened_filename: ib_step2_smoke_screen.csv
+  resume_existing_metrics: false
+  progress_every: 1
+  checkpoint_every: 1
+  ibkr:
+    host: 127.0.0.1
+    port: 4001
+    client_id_base: 19000
+    readonly: true
+    timeout: 10
+    market_data_wait_seconds: 2.0
+    option_data_wait_seconds: 3.0
+
+universe:
+  mode: inline
+  tickers:
+    - SPY
+    - XLE
+    - KWEB
+
+screen:
+  option_dte_min: 25
+  option_dte_max: 56
+  option_target_dte: 35
+  option_monthly_only: true
+  min_otm_pct: 0.05
+  max_otm_pct: 0.15
+  preferred_otm_pct: 0.08
+  min_size_metric: 3000000000
+  min_dividend_yield: 0.0
+  min_call_annualized_yield: 0.03
+  min_call_open_interest: 50
+  min_call_volume: 3
+  max_option_spread_pct: 0.15
+  min_beta_1y: -0.25
+  max_beta_1y: 1.25
+  min_realized_vol_1y: 0.08
+  max_realized_vol_1y: 0.45
+  min_total_return_3y: -0.10
+  max_drawdown_3y: 0.50
+  allowed_asset_types: [ETF]
+
+output:
+  top_n: 10

@@ -1,0 +1,179 @@
+{
+  "workflow_dir": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-094118-covered_call",
+  "config_name": "covered_call_config.yaml",
+  "candidate_pool": {
+    "source_universe_rows": 467,
+    "candidate_rows": 63,
+    "size_median": 19852767232.0,
+    "liquidity_median": 32081725.046145532,
+    "artifacts": {
+      "review_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-094118-covered_call/step1_candidate_review.csv",
+      "candidate_universe_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-094118-covered_call/step1_candidate_universe.csv",
+      "candidate_tickers_txt": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-094118-covered_call/step1_candidate_tickers.txt",
+      "candidate_metrics_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-094118-covered_call/step1_candidate_metrics.csv",
+      "settings_json": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-094118-covered_call/step1_candidate_settings.json"
+    },
+    "preview_rows": [
+      {
+        "symbol": "SPY",
+        "name": "SPDR S&P 500 ETF Trust",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 56220005020.10547,
+        "size_metric": 642392326144.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "QQQ",
+        "name": "Invesco QQQ Trust",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 36717594038.38984,
+        "size_metric": 250561953792.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IWM",
+        "name": "iShares Russell 2000 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 10552081098.43826,
+        "size_metric": 75712061440.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IVV",
+        "name": "iShares Core S&P 500 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 6307493164.825193,
+        "size_metric": 437067743232.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VOO",
+        "name": "Vanguard S&P 500 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 6114537917.583933,
+        "size_metric": 1421127057408.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "RSP",
+        "name": "Invesco S&P 500 Equal Weight ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 3422788979.163299,
+        "size_metric": 31068598272.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "DIA",
+        "name": "SPDR Dow Jones Industrial Average ETF Trust",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 3156670707.457758,
+        "size_metric": 39380058112.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLF",
+        "name": "Financial Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2514117267.466905,
+        "size_metric": 46089322496.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLK",
+        "name": "Technology Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2511455314.8973155,
+        "size_metric": 40890015744.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "EEM",
+        "name": "iShares MSCI Emerging Markets ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2054933912.5072265,
+        "size_metric": 46799282176.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "EFA",
+        "name": "iShares MSCI EAFE ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2024819165.7825775,
+        "size_metric": 96946102272.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLV",
+        "name": "Health Care Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2019082496.929747,
+        "size_metric": 29172017152.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLI",
+        "name": "Industrial Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1951078536.8221776,
+        "size_metric": 23387637760.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VTI",
+        "name": "Vanguard Total Stock Market Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1761412760.7576923,
+        "size_metric": 715931123712.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IEFA",
+        "name": "iShares Core MSCI EAFE ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1328682097.922522,
+        "size_metric": 169633218560.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "QQQM",
+        "name": "Invesco NASDAQ 100 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1252286406.157709,
+        "size_metric": 68830765056.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IWF",
+        "name": "iShares Russell 1000 Growth ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1148234935.2849653,
+        "size_metric": 132795310080.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VEA",
+        "name": "Vanguard FTSE Developed Markets Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1126878136.981804,
+        "size_metric": 282201522176.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IEMG",
+        "name": "iShares Core MSCI Emerging Markets ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1117755194.196898,
+        "size_metric": 87794532352.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SPLG",
+        "name": "SPDR Portfolio S&P 500 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1036688901.2765224,
+        "size_metric": 97328324608.0,
+        "candidate_fail_reasons": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "config_name": "sp500_config.yaml",
+  "workflow_settings": {
+    "source_universe_csv": "sp500_constituents.csv",
+    "allowed_market_classes": [
+      "equity",
+      "commodity",
+      "fixed_income",
+      "currency",
+      "alternative",
+      "crypto",
+      "other"
+    ],
+    "require_usd": true,
+    "require_us_listing": true,
+    "require_etf_asset_type": false,
+    "min_avg_dollar_volume": 1000000000,
+    "min_size_metric": 100000000000,
+    "step2_reuse_same_day_cache": false
+  },
+  "size_median": 39525175296.0,
+  "liquidity_median": null,
+  "local_enrichment_csv": "out/sp500_metrics.csv"
+}

@@ -1,0 +1,1895 @@
+{
+  "workflow_dir": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-142232-covered_call",
+  "config_name": "covered_call_config.yaml",
+  "settings": {
+    "source_universe_csv": "etf_equity_commodity_median_100m_universe.csv",
+    "allowed_market_classes": [
+      "equity",
+      "commodity",
+      "fixed_income",
+      "currency",
+      "alternative",
+      "crypto",
+      "other"
+    ],
+    "require_usd": true,
+    "require_us_listing": true,
+    "require_etf_asset_type": true,
+    "min_avg_dollar_volume": 200000000,
+    "min_size_metric": 30000000000,
+    "step2_reuse_same_day_cache": false
+  },
+  "candidate_pool": {
+    "source_universe_rows": 134,
+    "candidate_rows": 46,
+    "status_counts": {
+      "FAIL": 88,
+      "PASS": 46
+    },
+    "size_median": 19894205440.0,
+    "liquidity_median": 321618287.2612338,
+    "artifacts": {
+      "review_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-142232-covered_call/step1_candidate_review.csv",
+      "candidate_universe_csv": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-142232-covered_call/step1_candidate_universe.csv",
+      "candidate_tickers_txt": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-142232-covered_call/step1_candidate_tickers.txt",
+      "settings_json": "/Users/patrick/Projects/covered_call/out/workflow_runs/20260416-142232-covered_call/step1_candidate_settings.json",
+      "local_enrichment_csv": "out/etf_equity_commodity_median_100m_metrics.csv"
+    },
+    "preview_rows": [
+      {
+        "symbol": "SPY",
+        "name": "SPDR S&P 500 ETF Trust",
+        "market_bucket": "alternative",
+        "avg_dollar_volume": 56220005020.10547,
+        "size_metric": 642392326144.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "QQQ",
+        "name": "Invesco QQQ Trust",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 36717594038.38984,
+        "size_metric": 250561953792.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IWM",
+        "name": "iShares Russell 2000 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 10552081098.43826,
+        "size_metric": 75712061440.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "GLD",
+        "name": "SPDR Gold Shares",
+        "market_bucket": "commodity",
+        "avg_dollar_volume": 6941069058.981323,
+        "size_metric": 114651734016.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IVV",
+        "name": "iShares Core S&P 500 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 6307493164.825193,
+        "size_metric": 437067743232.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VOO",
+        "name": "Vanguard S&P 500 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 6114537917.583933,
+        "size_metric": 1421127057408.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "RSP",
+        "name": "Invesco S&P 500 Equal Weight ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 3422788979.163299,
+        "size_metric": 31068598272.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "DIA",
+        "name": "SPDR Dow Jones Industrial Average ETF Trust",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 3156670707.457758,
+        "size_metric": 39380058112.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLF",
+        "name": "Financial Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2514117267.466905,
+        "size_metric": 46089322496.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "XLK",
+        "name": "Technology Select Sector SPDR Fund",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2511455314.8973155,
+        "size_metric": 40890015744.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "EEM",
+        "name": "iShares MSCI Emerging Markets ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2054933912.5072265,
+        "size_metric": 46799282176.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "EFA",
+        "name": "iShares MSCI EAFE ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 2024819165.7825775,
+        "size_metric": 96946102272.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VTI",
+        "name": "Vanguard Total Stock Market Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1761412760.7576923,
+        "size_metric": 715931123712.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IEFA",
+        "name": "iShares Core MSCI EAFE ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1328682097.922522,
+        "size_metric": 169633218560.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "QQQM",
+        "name": "Invesco NASDAQ 100 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1252286406.157709,
+        "size_metric": 68830765056.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IAU",
+        "name": "iShares Gold Trust",
+        "market_bucket": "commodity",
+        "avg_dollar_volume": 1200292579.769885,
+        "size_metric": 87546339328.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IWF",
+        "name": "iShares Russell 1000 Growth ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1148234935.2849653,
+        "size_metric": 132795310080.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VEA",
+        "name": "Vanguard FTSE Developed Markets Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1126878136.981804,
+        "size_metric": 282201522176.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IEMG",
+        "name": "iShares Core MSCI Emerging Markets ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1117755194.196898,
+        "size_metric": 87794532352.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SPLG",
+        "name": "SPDR Portfolio S&P 500 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 1036688901.2765224,
+        "size_metric": 97328324608.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IWD",
+        "name": "iShares Russell 1000 Value ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 878073301.0478358,
+        "size_metric": 68415709184.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VTV",
+        "name": "Vanguard Value Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 852864089.940188,
+        "size_metric": 85715673088.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IJR",
+        "name": "iShares Core S&P Small-Cap ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 747998264.3618307,
+        "size_metric": 74826096640.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VUG",
+        "name": "Vanguard Growth Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 726100407.8504255,
+        "size_metric": 117562261504.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "MDY",
+        "name": "SPDR S&P MIDCAP 400 ETF Trust",
+        "market_bucket": "alternative",
+        "avg_dollar_volume": 670815292.8291566,
+        "size_metric": 36097396736.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VT",
+        "name": "Vanguard Total World Stock Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 648230292.8642519,
+        "size_metric": 79217811456.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SCHD",
+        "name": "Schwab U.S. Dividend Equity ETF",
+        "market_bucket": "fixed_income",
+        "avg_dollar_volume": 615832984.2530375,
+        "size_metric": 84820000768.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VWO",
+        "name": "Vanguard FTSE Emerging Markets Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 612930974.2999231,
+        "size_metric": 82378588160.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VXUS",
+        "name": "Vanguard Total International Stock Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 612352330.6833882,
+        "size_metric": 582269730816.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SCHX",
+        "name": "Schwab U.S. Large-Cap ETF",
+        "market_bucket": "fixed_income",
+        "avg_dollar_volume": 579753555.8048309,
+        "size_metric": 61436944384.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IWB",
+        "name": "iShares Russell 1000 ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 538087367.2301754,
+        "size_metric": 48010829824.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SCHG",
+        "name": "Schwab U.S. Large-Cap Growth ETF",
+        "market_bucket": "fixed_income",
+        "avg_dollar_volume": 477457771.64579976,
+        "size_metric": 48416563200.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VGT",
+        "name": "Vanguard Information Technology Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 402981823.761134,
+        "size_metric": 121284206592.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VNQ",
+        "name": "Vanguard Real Estate Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 358221199.03085154,
+        "size_metric": 34904367104.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VIG",
+        "name": "Vanguard Dividend Appreciation Index Fund ETF Shares",
+        "market_bucket": "alternative",
+        "avg_dollar_volume": 339294017.91069275,
+        "size_metric": 117045436416.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VONG",
+        "name": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 326830099.1807261,
+        "size_metric": 44948783104.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "JEPI",
+        "name": "JPMorgan Equity Premium Income ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 301816306.8427578,
+        "size_metric": 43964334080.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SCHF",
+        "name": "Schwab International Equity ETF",
+        "market_bucket": "fixed_income",
+        "avg_dollar_volume": 296453445.9837098,
+        "size_metric": 56551763968.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VEU",
+        "name": "Vanguard FTSE All-World ex-US Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 276090705.256499,
+        "size_metric": 37239341056.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IWR",
+        "name": "iShares Russell Mid-Cap ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 268095833.45227396,
+        "size_metric": 35755208704.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SCHB",
+        "name": "Schwab U.S. Broad Market ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 250923590.7035305,
+        "size_metric": 36927254528.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VYM",
+        "name": "Vanguard High Dividend Yield Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 247920705.1206527,
+        "size_metric": 88722817024.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "DYNF",
+        "name": "BlackRock U.S. Equity Factor Rotation ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 246177628.40633085,
+        "size_metric": 30008514560.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "SPDW",
+        "name": "SPDR Portfolio Developed World ex-US ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 234991670.79376405,
+        "size_metric": 35649814528.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "VO",
+        "name": "Vanguard Mid-Cap Index Fund ETF Shares",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 231791106.7842545,
+        "size_metric": 46485987328.0,
+        "candidate_fail_reasons": ""
+      },
+      {
+        "symbol": "IXUS",
+        "name": "iShares Core MSCI Total International Stock ETF",
+        "market_bucket": "equity",
+        "avg_dollar_volume": 226573616.2315861,
+        "size_metric": 51986108416.0,
+        "candidate_fail_reasons": ""
+      }
+    ],
+    "review_preview_rows": [
+      {
+        "symbol": "SPY",
+        "name": "SPDR S&P 500 ETF Trust",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "alternative",
+        "category_group": "Alternatives",
+        "avg_dollar_volume": 56220005020.10547,
+        "size_metric": 642392326144.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "QQQ",
+        "name": "Invesco QQQ Trust",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 36717594038.38984,
+        "size_metric": 250561953792.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWM",
+        "name": "iShares Russell 2000 ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 10552081098.43826,
+        "size_metric": 75712061440.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "GLD",
+        "name": "SPDR Gold Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "commodity",
+        "category_group": "Commodities",
+        "avg_dollar_volume": 6941069058.981323,
+        "size_metric": 114651734016.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IVV",
+        "name": "iShares Core S&P 500 ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 6307493164.825193,
+        "size_metric": 437067743232.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VOO",
+        "name": "Vanguard S&P 500 ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 6114537917.583933,
+        "size_metric": 1421127057408.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SLV",
+        "name": "iShares Silver Trust",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Commodities",
+        "avg_dollar_volume": 5239303537.158181,
+        "size_metric": 24529766400.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "RSP",
+        "name": "Invesco S&P 500 Equal Weight ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 3422788979.163299,
+        "size_metric": 31068598272.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "DIA",
+        "name": "SPDR Dow Jones Industrial Average ETF Trust",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 3156670707.457758,
+        "size_metric": 39380058112.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SMH",
+        "name": "VanEck Vectors Semiconductor ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 3089461062.312243,
+        "size_metric": 5286917632.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLF",
+        "name": "Financial Select Sector SPDR Fund",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 2514117267.466905,
+        "size_metric": 46089322496.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLK",
+        "name": "Technology Select Sector SPDR Fund",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 2511455314.8973155,
+        "size_metric": 40890015744.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "GDX",
+        "name": "VanEck Vectors Gold Miners ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Materials",
+        "avg_dollar_volume": 2483807461.530883,
+        "size_metric": 28155811840.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLE",
+        "name": "Energy Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Energy",
+        "avg_dollar_volume": 2364078150.642423,
+        "size_metric": 10395001856.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EEM",
+        "name": "iShares MSCI Emerging Markets ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 2054933912.5072265,
+        "size_metric": 46799282176.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EFA",
+        "name": "iShares MSCI EAFE ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 2024819165.7825775,
+        "size_metric": 96946102272.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLV",
+        "name": "Health Care Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Health Care",
+        "avg_dollar_volume": 2019082496.929747,
+        "size_metric": 29172017152.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLI",
+        "name": "Industrial Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Industrials",
+        "avg_dollar_volume": 1951078536.8221776,
+        "size_metric": 23387637760.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VTI",
+        "name": "Vanguard Total Stock Market Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 1761412760.7576923,
+        "size_metric": 715931123712.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EWY",
+        "name": "iShares MSCI South Korea ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 1752015972.1041217,
+        "size_metric": 10955952128.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLP",
+        "name": "Consumer Staples Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Consumer Staples",
+        "avg_dollar_volume": 1462956280.878387,
+        "size_metric": 17036541952.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IEFA",
+        "name": "iShares Core MSCI EAFE ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 1328682097.922522,
+        "size_metric": 169633218560.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLY",
+        "name": "Consumer Discretionary Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Consumer Discretionary",
+        "avg_dollar_volume": 1284376319.2377398,
+        "size_metric": 14211500032.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "QQQM",
+        "name": "Invesco NASDAQ 100 ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 1252286406.157709,
+        "size_metric": 68830765056.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "FXI",
+        "name": "iShares China Large-Cap ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 1224890906.3198488,
+        "size_metric": 4774116352.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XBI",
+        "name": "SPDR S&P Biotech ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Health Care",
+        "avg_dollar_volume": 1208526078.1142266,
+        "size_metric": 7434448896.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IAU",
+        "name": "iShares Gold Trust",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "commodity",
+        "category_group": "Commodities",
+        "avg_dollar_volume": 1200292579.769885,
+        "size_metric": 87546339328.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "KRE",
+        "name": "SPDR S&P Regional Banking ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 1169539460.3593273,
+        "size_metric": 3711147008.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWF",
+        "name": "iShares Russell 1000 Growth ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 1148234935.2849653,
+        "size_metric": 132795310080.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VEA",
+        "name": "Vanguard FTSE Developed Markets Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 1126878136.981804,
+        "size_metric": 282201522176.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IEMG",
+        "name": "iShares Core MSCI Emerging Markets ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 1117755194.196898,
+        "size_metric": 87794532352.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLU",
+        "name": "Utilities Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Utilities",
+        "avg_dollar_volume": 1063716185.2435144,
+        "size_metric": 7513869312.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPLG",
+        "name": "SPDR Portfolio S&P 500 ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 1036688901.2765224,
+        "size_metric": 97328324608.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IJH",
+        "name": "iShares Core S&P Mid-Cap ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 954053450.7375872,
+        "size_metric": 18368063488.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "GLDM",
+        "name": "SPDR Gold MiniShares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Commodities",
+        "avg_dollar_volume": 881560945.2857971,
+        "size_metric": 29616130048.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWD",
+        "name": "iShares Russell 1000 Value ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 878073301.0478358,
+        "size_metric": 68415709184.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VTV",
+        "name": "Vanguard Value Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 852864089.940188,
+        "size_metric": 85715673088.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLC",
+        "name": "Communication Services Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "fixed_income",
+        "category_group": "Communication Services",
+        "avg_dollar_volume": 767930933.1099049,
+        "size_metric": 24108154880.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "KWEB",
+        "name": "KraneShares CSI China Internet ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 755118974.842027,
+        "size_metric": 6039135744.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IJR",
+        "name": "iShares Core S&P Small-Cap ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 747998264.3618307,
+        "size_metric": 74826096640.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLB",
+        "name": "Materials Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Materials",
+        "avg_dollar_volume": 732250253.56868,
+        "size_metric": 3695439616.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VUG",
+        "name": "Vanguard Growth Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 726100407.8504255,
+        "size_metric": 117562261504.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "ARKK",
+        "name": "ARK Innovation ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 717794176.8358877,
+        "size_metric": 5980084736.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IYR",
+        "name": "iShares U.S. Real Estate ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Real Estate",
+        "avg_dollar_volume": 708089454.2874552,
+        "size_metric": 4958194688.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EWJ",
+        "name": "iShares MSCI Japan ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 707457037.2724288,
+        "size_metric": 20294598656.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "ACWI",
+        "name": "iShares MSCI ACWI ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "alternative",
+        "category_group": "Alternatives",
+        "avg_dollar_volume": 687528771.546653,
+        "size_metric": 28206403584.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "MDY",
+        "name": "SPDR S&P MIDCAP 400 ETF Trust",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "alternative",
+        "category_group": "Alternatives",
+        "avg_dollar_volume": 670815292.8291566,
+        "size_metric": 36097396736.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VT",
+        "name": "Vanguard Total World Stock Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 648230292.8642519,
+        "size_metric": 79217811456.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCHD",
+        "name": "Schwab U.S. Dividend Equity ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "fixed_income",
+        "category_group": "Fixed Income",
+        "avg_dollar_volume": 615832984.2530375,
+        "size_metric": 84820000768.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VWO",
+        "name": "Vanguard FTSE Emerging Markets Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 612930974.2999231,
+        "size_metric": 82378588160.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VXUS",
+        "name": "Vanguard Total International Stock Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 612352330.6833882,
+        "size_metric": 582269730816.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XOP",
+        "name": "SPDR S&P Oil & Gas Exploration & Production ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Energy",
+        "avg_dollar_volume": 603960523.2028469,
+        "size_metric": 11580329984.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCHX",
+        "name": "Schwab U.S. Large-Cap ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "fixed_income",
+        "category_group": "Fixed Income",
+        "avg_dollar_volume": 579753555.8048309,
+        "size_metric": 61436944384.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWB",
+        "name": "iShares Russell 1000 ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 538087367.2301754,
+        "size_metric": 48010829824.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPYG",
+        "name": "SPDR Portfolio S&P 500 Growth ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "alternative",
+        "category_group": "Alternatives",
+        "avg_dollar_volume": 501416736.87704146,
+        "size_metric": 15114934272.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCHG",
+        "name": "Schwab U.S. Large-Cap Growth ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "fixed_income",
+        "category_group": "Fixed Income",
+        "avg_dollar_volume": 477457771.64579976,
+        "size_metric": 48416563200.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IVW",
+        "name": "iShares S&P 500 Growth ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 470144523.6254846,
+        "size_metric": 16525271040.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VGT",
+        "name": "Vanguard Information Technology Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 402981823.761134,
+        "size_metric": 121284206592.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "INDA",
+        "name": "iShares MSCI India ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 398792995.4062031,
+        "size_metric": 6745649664.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VTWO",
+        "name": "Vanguard Russell 2000 Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 382717305.7916026,
+        "size_metric": 14520372224.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VNQ",
+        "name": "Vanguard Real Estate Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Real Estate",
+        "avg_dollar_volume": 358221199.03085154,
+        "size_metric": 34904367104.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EWT",
+        "name": "iShares MSCI Taiwan ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 357319468.5505836,
+        "size_metric": 6862899712.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "XLRE",
+        "name": "The Real Estate Select Sector SPDR Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Real Estate",
+        "avg_dollar_volume": 356308653.37335217,
+        "size_metric": 7306239488.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VIG",
+        "name": "Vanguard Dividend Appreciation Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "alternative",
+        "category_group": "Alternatives",
+        "avg_dollar_volume": 339294017.91069275,
+        "size_metric": 117045436416.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "OEF",
+        "name": "iShares S&P 100 ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 338121794.24089,
+        "size_metric": 13459680256.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VONG",
+        "name": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 326830099.1807261,
+        "size_metric": 44948783104.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "COPX",
+        "name": "Global X Copper Miners ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Materials",
+        "avg_dollar_volume": 322932229.43061703,
+        "size_metric": 6707480576.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IBB",
+        "name": "iShares Nasdaq Biotechnology ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Health Care",
+        "avg_dollar_volume": 320304345.0918505,
+        "size_metric": 12266503168.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SGOL",
+        "name": "Aberdeen Standard Gold ETF Trust",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Commodities",
+        "avg_dollar_volume": 303128933.83258694,
+        "size_metric": 7866952704.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "JEPI",
+        "name": "JPMorgan Equity Premium Income ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 301816306.8427578,
+        "size_metric": 43964334080.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VGK",
+        "name": "Vanguard FTSE Europe Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 298678906.35503954,
+        "size_metric": 24832645120.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCHF",
+        "name": "Schwab International Equity ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "fixed_income",
+        "category_group": "Fixed Income",
+        "avg_dollar_volume": 296453445.9837098,
+        "size_metric": 56551763968.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SIL",
+        "name": "Global X Silver Miners ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Materials",
+        "avg_dollar_volume": 295490605.6173386,
+        "size_metric": 5131136000.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SIVR",
+        "name": "Aberdeen Standard Physical Silver Shares ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Commodities",
+        "avg_dollar_volume": 283850421.5802654,
+        "size_metric": 4970486784.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SILJ",
+        "name": "ETFMG Prime Junior Silver Miners ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Materials",
+        "avg_dollar_volume": 276113507.0799305,
+        "size_metric": 4027863296.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VEU",
+        "name": "Vanguard FTSE All-World ex-US Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Real Estate",
+        "avg_dollar_volume": 276090705.256499,
+        "size_metric": 37239341056.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWR",
+        "name": "iShares Russell Mid-Cap ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 268095833.45227396,
+        "size_metric": 35755208704.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "URA",
+        "name": "Global X Uranium ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Materials",
+        "avg_dollar_volume": 263317022.5834723,
+        "size_metric": 6505265152.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IVE",
+        "name": "iShares S&P 500 Value ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 260902961.7709006,
+        "size_metric": 28984428544.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IYW",
+        "name": "iShares U.S. Technology ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 260861186.4598305,
+        "size_metric": 4237999360.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCHB",
+        "name": "Schwab U.S. Broad Market ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 250923590.7035305,
+        "size_metric": 36927254528.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VYM",
+        "name": "Vanguard High Dividend Yield Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 247920705.1206527,
+        "size_metric": 88722817024.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "DYNF",
+        "name": "BlackRock U.S. Equity Factor Rotation ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 246177628.40633085,
+        "size_metric": 30008514560.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPDW",
+        "name": "SPDR Portfolio Developed World ex-US ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 234991670.79376405,
+        "size_metric": 35649814528.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "USMV",
+        "name": "iShares MSCI USA Min Vol Factor ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 232411652.58852437,
+        "size_metric": 22560100352.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VO",
+        "name": "Vanguard Mid-Cap Index Fund ETF Shares",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 231791106.7842545,
+        "size_metric": 46485987328.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EMXC",
+        "name": "iShares MSCI Emerging Markets ex China ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 228048657.46732527,
+        "size_metric": 17542797312.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EFV",
+        "name": "iShares MSCI EAFE Value ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 227323529.1637728,
+        "size_metric": 28638212096.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IXUS",
+        "name": "iShares Core MSCI Total International Stock ETF",
+        "candidate_status": "PASS",
+        "candidate_fail_reasons": "",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 226573616.2315861,
+        "size_metric": 51986108416.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCHH",
+        "name": "Schwab U.S. REIT ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Real Estate",
+        "avg_dollar_volume": 220890581.66930905,
+        "size_metric": 9150117888.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "ITA",
+        "name": "iShares U.S. Aerospace & Defense ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Industrials",
+        "avg_dollar_volume": 208910011.6827688,
+        "size_metric": 13488702464.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "MTUM",
+        "name": "iShares MSCI USA Momentum Factor ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 208123041.74457672,
+        "size_metric": 20236066816.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPYV",
+        "name": "SPDR Portfolio S&P 500 Value ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 206494045.3417778,
+        "size_metric": 5216182272.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPMO",
+        "name": "Invesco S&P 500 Momentum ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 202623951.28858012,
+        "size_metric": 12323705856.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VB",
+        "name": "Vanguard Small-Cap Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 199562231.23363373,
+        "size_metric": 245848424448.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "MCHI",
+        "name": "iShares MSCI China ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "alternative",
+        "category_group": "Alternatives",
+        "avg_dollar_volume": 194932464.21309748,
+        "size_metric": 6613231616.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EFG",
+        "name": "iShares MSCI EAFE Growth ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 194382641.29429477,
+        "size_metric": 13903223808.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "KBWB",
+        "name": "Invesco KBW Bank ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 194090452.8236943,
+        "size_metric": 4832956416.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "MGK",
+        "name": "Vanguard Mega Cap Growth Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "fixed_income",
+        "category_group": "Fixed Income",
+        "avg_dollar_volume": 188980170.40833503,
+        "size_metric": 27851730944.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IDEV",
+        "name": "iShares Core MSCI International Developed Markets ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": null,
+        "avg_dollar_volume": 180471984.37908545,
+        "size_metric": 27528067072.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPMD",
+        "name": "SPDR Portfolio S&P 400 Mid Cap ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 178742382.97377864,
+        "size_metric": 15626735616.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "FNDX",
+        "name": "Schwab Fundamental U.S. Large Company Index ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 178408256.36882475,
+        "size_metric": 23670581248.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "ACWX",
+        "name": "iShares MSCI ACWI ex U.S. ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "alternative",
+        "category_group": "Alternatives",
+        "avg_dollar_volume": 169380056.42810023,
+        "size_metric": 9372976128.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWO",
+        "name": "iShares Russell 2000 Growth ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 160471172.55140737,
+        "size_metric": 15572105216.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "DGRO",
+        "name": "iShares Core Dividend Growth ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 159159808.93919545,
+        "size_metric": 37549682688.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWP",
+        "name": "iShares Russell Mid-Cap Growth ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 150313339.79071957,
+        "size_metric": 10342156288.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWN",
+        "name": "iShares Russell 2000 Value ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 149802016.87850952,
+        "size_metric": 14841853952.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "FDN",
+        "name": "First Trust Dow Jones Internet Index Fund",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 149035387.44759098,
+        "size_metric": 4539641344.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "QYLD",
+        "name": "Global X NASDAQ 100 Covered Call ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 144429692.63629913,
+        "size_metric": 8078984704.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPEM",
+        "name": "SPDR Portfolio Emerging Markets ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 140548803.0693608,
+        "size_metric": 3874560000.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "AVEM",
+        "name": "Avantis Emerging Markets Equity ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Real Estate",
+        "avg_dollar_volume": 137678315.48390543,
+        "size_metric": 19935643648.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EWC",
+        "name": "iShares MSCI Canada ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 132855067.8055548,
+        "size_metric": 5502192128.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "FEZ",
+        "name": "SPDR EURO STOXX 50 ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 130523493.84955128,
+        "size_metric": 4043602176.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VDE",
+        "name": "Vanguard Energy Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Energy",
+        "avg_dollar_volume": 127246336.0416966,
+        "size_metric": 6615556608.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCZ",
+        "name": "iShares MSCI EAFE Small-Cap ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "fixed_income",
+        "category_group": "Fixed Income",
+        "avg_dollar_volume": 126622361.6269081,
+        "size_metric": 13434171392.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCHV",
+        "name": "Schwab U.S. Large-Cap Value ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "fixed_income",
+        "category_group": "Fixed Income",
+        "avg_dollar_volume": 126006339.609303,
+        "size_metric": 14824918016.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPHQ",
+        "name": "Invesco S&P 500 Quality ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 125786443.35704312,
+        "size_metric": 15730106368.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VONV",
+        "name": "Vanguard Russell 1000 Value Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 125333343.67054357,
+        "size_metric": 18284244992.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "BBJP",
+        "name": "JPMorgan BetaBuilders Japan ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "currency",
+        "category_group": "Equities",
+        "avg_dollar_volume": 121400958.41390856,
+        "size_metric": 15013165056.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VV",
+        "name": "Vanguard Large-Cap Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Information Technology",
+        "avg_dollar_volume": 120967547.81833772,
+        "size_metric": 34657783808.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IUSG",
+        "name": "iShares Core S&P U.S. Growth ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 120163516.04659788,
+        "size_metric": 18284175360.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VYMI",
+        "name": "Vanguard International High Dividend Yield Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 119402395.36761622,
+        "size_metric": 18793373696.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "PDBC",
+        "name": "Invesco Optimum Yield Diversified Commodity Strategy No K-1 ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "commodity",
+        "category_group": "Commodities",
+        "avg_dollar_volume": 118219841.36440216,
+        "size_metric": 6465692672.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SPSM",
+        "name": "SPDR Portfolio S&P 600 Small Cap ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "alternative",
+        "category_group": "Alternatives",
+        "avg_dollar_volume": 117503545.23967928,
+        "size_metric": 13871297536.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SHLD",
+        "name": "VictoryShares Protect America ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Industrials",
+        "avg_dollar_volume": 115368032.73200987,
+        "size_metric": 8079923200.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IQLT",
+        "name": "iShares MSCI Intl Quality Factor ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 114967128.6070516,
+        "size_metric": 11938388992.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWY",
+        "name": "iShares Russell Top 200 Growth ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 114133922.05139898,
+        "size_metric": 14742337536.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IUSV",
+        "name": "iShares Core S&P U.S. Value ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 113339060.38969716,
+        "size_metric": 10511677440.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "RDVY",
+        "name": "First Trust Rising Dividend Achievers ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 108943002.831256,
+        "size_metric": 19852767232.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "VOOG",
+        "name": "Vanguard S&P 500 Growth Index Fund ETF Shares",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 107241257.515815,
+        "size_metric": 7676354560.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IEUR",
+        "name": "iShares Core MSCI Europe ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 103876128.36605196,
+        "size_metric": 8329769472.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "IWV",
+        "name": "iShares Russell 3000 ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 102100036.8922572,
+        "size_metric": 21889333248.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "SCHA",
+        "name": "Schwab U.S. Small-Cap ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Financials",
+        "avg_dollar_volume": 101202069.83110058,
+        "size_metric": 19801763840.0,
+        "asset_type": "ETF"
+      },
+      {
+        "symbol": "EWU",
+        "name": "iShares MSCI United Kingdom ETF",
+        "candidate_status": "FAIL",
+        "candidate_fail_reasons": "size_metric<30000000000.0;avg_dollar_volume<200000000.0",
+        "market_bucket": "equity",
+        "category_group": "Equities",
+        "avg_dollar_volume": 100543504.08550692,
+        "size_metric": 3240839936.0,
+        "asset_type": "ETF"
+      }
+    ],
+    "top_fail_reasons": [
+      {
+        "reason": "size_metric<30000000000.0",
+        "count": 85
+      },
+      {
+        "reason": "avg_dollar_volume<200000000.0",
+        "count": 40
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+data:
+  benchmark: SPY
+  history_period: 4y
+  cache_dir: out
+  metrics_filename: sp500_metrics.csv
+  screened_filename: sp500_screen.csv
+
+universe:
+  mode: file
+  path: sp500_constituents.csv
+  limit: null
+
+screen:
+  option_dte_min: 25
+  option_dte_max: 56
+  option_target_dte: 35
+  option_monthly_only: true
+  min_otm_pct: 0.05
+  max_otm_pct: 0.15
+  preferred_otm_pct: 0.08
+
+  min_size_metric: 10000000000
+  min_dividend_yield: 0.02
+  min_call_annualized_yield: 0.06
+  min_call_open_interest: 500
+  min_call_volume: 10
+  max_option_spread_pct: 0.08
+
+  min_beta_1y: -0.25
+  max_beta_1y: 1.20
+  min_realized_vol_1y: 0.15
+  max_realized_vol_1y: 0.45
+
+  min_total_return_3y: -0.05
+  max_drawdown_3y: 0.45
+
+output:
+  top_n: 25

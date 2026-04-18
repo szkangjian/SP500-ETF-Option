@@ -1,0 +1,5 @@
+ticker,asset_type,size_metric_name,size_metric,price,ttm_dividends,dividend_yield,beta_1y,realized_vol_1y,total_return_3y,max_drawdown_3y,selected_expiration,selected_dte,selected_strike,selected_call_bid,selected_call_ask,selected_call_mid,selected_call_open_interest,selected_call_volume,expiration_total_call_open_interest,selected_call_otm_pct,selected_call_spread_pct,selected_call_yield,annualized_call_yield,as_of_date,error
+VZ,EQUITY,marketCap,195000000000,45.8,2.82,0.0616,0.56,0.221,0.110,0.245,2026-05-22,37,48.0,0.82,0.88,0.85,12000,5400,245000,0.0480,0.0706,0.0186,0.1833,2026-04-15,
+SCHD,ETF,totalAssets,72000000000,31.2,1.08,0.0346,0.98,0.168,0.285,0.182,2026-05-22,37,32.5,0.12,0.14,0.13,2800,1500,98000,0.0417,0.1538,0.0042,0.0414,2026-04-15,
+MO,EQUITY,marketCap,118000000000,67.5,4.24,0.0628,0.46,0.198,0.150,0.492,2026-05-22,37,70.0,0.70,0.81,0.755,1900,700,54000,0.0370,0.1457,0.0112,0.1104,2026-04-15,
+T,EQUITY,marketCap,187000000000,26.3,1.11,0.0422,0.62,0.187,-0.080,0.228,2026-05-22,37,27.5,0.19,0.22,0.205,310,120,88000,0.0456,0.1463,0.0078,0.0768,2026-04-15,
