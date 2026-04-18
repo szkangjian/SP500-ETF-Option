@@ -52,7 +52,7 @@ make dashboard
 - `plan: free`
 - `runtime: python`
 - `buildCommand: pip install -r requirements.txt`
-- `startCommand: python screening_dashboard.py`
+- `startCommand: python screening_dashboard.py --host 0.0.0.0 --port $PORT`
 - `COVERED_CALL_READ_ONLY=true`
 
 这意味着部署后的站点会：

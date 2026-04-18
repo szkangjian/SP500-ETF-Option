@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import shutil
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -170,6 +171,18 @@ class ScreeningDashboardTests(unittest.TestCase):
                     {},
                 ),
             )
+
+    def test_parse_args_ignores_host_env_in_cloud_mode(self) -> None:
+        with (
+            mock.patch.object(screening_dashboard, "READ_ONLY_MODE", True),
+            mock.patch.object(screening_dashboard, "RENDER_ENV", False),
+            mock.patch.dict("os.environ", {"HOST": "bad-hostname", "PORT": "9999"}, clear=False),
+            mock.patch.object(sys, "argv", ["screening_dashboard.py"]),
+        ):
+            args = screening_dashboard.parse_args()
+
+        self.assertEqual(args.host, "0.0.0.0")
+        self.assertEqual(args.port, 9999)
 
     def test_workflow_csv_sources_render_as_select_dropdowns(self) -> None:
         html = screening_dashboard.HTML_PAGE

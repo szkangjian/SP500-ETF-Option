@@ -2947,7 +2947,8 @@ class DashboardHandler(BaseHTTPRequestHandler):
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Local tuning dashboard for covered-call screening.")
-    default_host = os.getenv("HOST") or ("0.0.0.0" if RENDER_ENV else "127.0.0.1")
+    cloud_mode = RENDER_ENV or READ_ONLY_MODE
+    default_host = os.getenv("COVERED_CALL_HOST") or ("0.0.0.0" if cloud_mode else "127.0.0.1")
     default_port = int(os.getenv("PORT") or 8765)
     parser.add_argument("--host", default=default_host, help=f"Host to bind. Default: {default_host}")
     parser.add_argument("--port", default=default_port, type=int, help=f"Port to bind. Default: {default_port}")
